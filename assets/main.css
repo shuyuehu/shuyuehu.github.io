@@ -3274,39 +3274,39 @@
   }
 }
 @media all, bookshop {
-  .c-blog-card__inner {
-    border-radius: 16px;
-    overflow: hidden;
-    transform: translate(0);
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
-    transition: box-shadow 0.2s;
-  }
-  .c-blog-card__image-wrap {
+ .c-blog-card__inner {
+  display: flex;
+  align-items: stretch; /* 确保子元素高度一致 */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.07);
+  transition: box-shadow 0.2s;
+}
+.c-blog-card__image-wrap {
     background: #fff;
-  }
-  .c-blog-card__image {
-    position: relative;
-    display: block;
-    height: 0;
-    padding-bottom: 71.25%;
-    background: #d5dce3;
-    overflow: hidden;
-  }
-  .c-blog-card__image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #d5dce3;
-  }
-  .c-blog-card__content {
-    position: relative;
-    z-index: 1;
-    padding: 28px;
-    margin-top: -20px;
-    border-radius: 16px 16px 0 0;
-    background: #fff;
-  }
+    flex: 0 0 50%; /* 图片占据40%的宽度，不可伸缩 */
+    position: relative; /* 为绝对定位的图片提供定位上下文 */
+    overflow: hidden; /* 防止图片溢出容器 */
+}
+.c-blog-card__content {
+  flex: 1; /* 内容占据剩余的空间 */
+  padding: 28px;
+  border-radius: 0 16px 16px 0; /* 调整圆角匹配新布局 */
+  background: #fff;  
+}
+.c-blog-card__image {
+  height: 100%; /* 调整高度自动根据内容调整 */
+  padding-bottom: 0; /* 如果图片固定大小不需要这个设置 */
+}
+.c-blog-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保证图片覆盖整个区域，但可能被裁切 */
+  background-color: #d5dce3;
+}
   .c-blog-card__tags-box {
     display: flex;
   }
