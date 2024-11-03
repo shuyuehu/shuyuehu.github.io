@@ -168,10 +168,13 @@
         <h2>What’s new:</h2>
           <ul>
             <div class="wrap" style="margin-top: 10px;">
-        
+              <div style="display: flex; align-items: center; margin-top: 20px;">
+                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">October 2024</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;" Our paper "Beyond a Binary Theorizing of Prosociality" was accepted to PNAS!</p>
+              </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Emergence of Social Norms in Generative Agent Societies: Principles and Architecture” was accepted by the HAI track (acceptance rate: 4%) of IJCAI 2024!</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Emergence of Social Norms in Generative Agent Societies: Principles and Architecture” was accepted to the HAI track (acceptance rate: 4%) of IJCAI 2024!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
@@ -185,14 +188,16 @@
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">December 2023</p>
                 <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games” was accepted by AAMAS 2024!</p>
               </div>
-              <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">September 2023</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium” was accepted by NeurIPS 2023!</p>
-              </div>
         
         </div>
           </ul>
-          <a href="#" onclick="alert('This link is currently under construction. Please check back later.'); return false;">Click Here for More News ...</a>
+          <a href="#" onclick="showNews(); return false;">Click Here for More News ...</a>
+          <div id="news" style="display: none; margin-top: 20px;">
+            <div style="display: flex; align-items: center;">
+              <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">September 2023</p>
+              <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium” was accepted by NeurIPS 2023!</p>
+            </div>
+          </div>
       </div>
     </div>
   </div>
@@ -281,6 +286,11 @@
   </div>
 </footer>
 <!-- end footer -->
+    <script>
+    function showNews() {
+      document.getElementById('news').style.display = 'block';
+    }
+    </script>
 
     <script src="/js/scripts.js"></script>
     <script src="/js/common.js"></script>
