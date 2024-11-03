@@ -170,7 +170,7 @@
             <div class="wrap" style="margin-top: 10px;">
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">October 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;" Our paper "Beyond a Binary Theorizing of Prosociality" was accepted to PNAS!</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;"> Our paper Beyond a Binary Theorizing of Prosociality" was accepted to PNAS!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
@@ -178,24 +178,24 @@
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Configurable Mirror Descent: Towards a Unification of Decision Making” was accepted by ICML 2024!</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Configurable Mirror Descent: Towards a Unification of Decision Making” was accepted to ICML 2024!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">April 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “A Successful Strategy for Multichannel Iterated Prisoner's Dilemma” was accepted by IJCAI 2024!</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “A Successful Strategy for Multichannel Iterated Prisoner's Dilemma” was accepted to IJCAI 2024!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
                 <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">December 2023</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games” was accepted by AAMAS 2024!</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games” was accepted to AAMAS 2024!</p>
               </div>
         
         </div>
           </ul>
-          <a href="#" onclick="showNews(); return false;">Click Here for More News ...</a>
+          <a href="#" onclick="toggleNews(); return false;">Click Here for More News ...</a>
           <div id="news" style="display: none; margin-top: 20px;">
             <div style="display: flex; align-items: center;">
               <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">September 2023</p>
-              <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium” was accepted by NeurIPS 2023!</p>
+              <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium” was accepted to NeurIPS 2023!</p>
             </div>
           </div>
       </div>
@@ -287,8 +287,13 @@
 </footer>
 <!-- end footer -->
     <script>
-    function showNews() {
-      document.getElementById('news').style.display = 'block';
+    function toggleNews() {
+      var newsDiv = document.getElementById('news');
+      if (newsDiv.style.display === 'none') {
+        newsDiv.style.display = 'block';
+      } else {
+        newsDiv.style.display = 'none';
+      }
     }
     </script>
 
