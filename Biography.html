@@ -43,26 +43,26 @@
 
 <body>
 
-    
 
-    <!-- begin header -->
-<header class="c-header">
-  <div class="container">
-    <div class="row">
-      <div class="c-header__inner">
 
-        <nav class="main-nav">
-          <div class="main-nav__box">
+  <!-- begin header -->
+  <header class="c-header">
+    <div class="container">
+      <div class="row">
+        <div class="c-header__inner">
 
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
+          <nav class="main-nav">
+            <div class="main-nav__box">
 
-            <div class="nav__title">Menu</div>
+              <div class="nav__icon-close">
+                <i class="ion ion-md-close"></i>
+              </div>
+
+              <div class="nav__title">Menu</div>
 
               <ul class="nav__list list-reset">
 
-              
+
                 <!-- Home 页面，被标记为当前活跃 -->
                 <li class="nav__item">
                   <a href="index.html" class="nav__link">Home</a>
@@ -70,78 +70,137 @@
 
                 <!-- Research 页面 -->
                 <li class="nav__item">
-                    <a href="#Biography" class="nav__link active">Biography</a>
+                  <a href="#Biography" class="nav__link active">Biography</a>
                 </li>
 
                 <!-- Biography 页面 -->
                 <li class="nav__item">
-                    <a href="research.html" class="nav__link">Research</a>
+                  <a href="research.html" class="nav__link">Research</a>
                 </li>
 
                 <!-- Team 页面 -->
                 <li class="nav__item">
-                    <a href="team.html" class="nav__link">Team</a>
+                  <a href="team.html" class="nav__link">Team</a>
                 </li>
 
                 <!-- Contact 页面 -->
                 <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
+                  <a href="contact.html" class="nav__link">Contact</a>
                 </li>
-              
 
-            </ul>
+
+              </ul>
+            </div>
+
+            <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+            <!--bookshop-live end-->
+          </nav>
+
+          <div class="nav-button">
+            <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
           </div>
 
-          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
-          <!--bookshop-live end-->
-        </nav>
-
-        <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
         </div>
-
       </div>
     </div>
-  </div>
-</header>
-<!-- end header -->
-  
+  </header>
+  <!-- end header -->
 
-    <!-- 
+
+  <!-- 
         Bookshop components are accessed using the bookshop tag, 
         using the same syntax as the standard Jekyll include tag.
     -->
-    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+  <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
 
-<style>
-  page__info{max-width:760px;margin:96px auto 48px;text-align:center}@media only screen and (max-width: 1024px){.post__info,.page__info{max-width:100%;margin:40px auto}}@media only screen and (max-width: 576px){.post__info,.page__info{margin:40px auto 32px}}
-  page__title{margin-bottom:20px;font-size:62px;line-height:1.2}@media only screen and (max-width: 1140px){.post__title,.page__title{font-size:64px}}@media only screen and (max-width: 1024px){.post__title,.page__title{font-size:48px}}@media only screen and (max-width: 576px){.post__title,.page__title{margin-bottom:24px;font-size:32px}}
-</style>
-<div class="c-page">
+  <style>
+    page__info {
+      max-width: 760px;
+      margin: 96px auto 48px;
+      text-align: center
+    }
 
-  <!-- begin content -->
-<main class="content" aria-label="Content">
-  <div class="container">
-  <div class="row">
-  <div class="col col-12">
-    <div class="page__info">
-      <h1 class="page__title">Biography</h1>
-    </div>
-  </div>
-</div>
-</div>
+    @media only screen and (max-width: 1024px) {
 
-<div class="container mt-5">
-  <article class="page">
-    <div class="page__content">
-      <p>Link: <a href="./assets/CV (4).pdf">CV</a></p>
+      .post__info,
+      .page__info {
+        max-width: 100%;
+        margin: 40px auto
+      }
+    }
 
-<!-- <h2 id="brief-biography">Brief Biography</h2> -->
-<p>Shuyue Hu is a researcher at Shanghai Artificial Intelligence Lab. She received her bachelor degree at South China University of Technology in 2015 and her doctoral degree at the Chinese University of Hong Kong under the supervision of Prof. Ho-fung Leung in 2019. From 2020 to 2022, she was a postdoctoral research fellow working with Prof. Harold Soh at National University of Singapore, and Prof. Georgios Piliouras at Singapore University of Technology and Design. She joined Shanghai Artificial Intelligence Lab in May 2022.  </p>
-<p>Shuyue’s research focuses on multi-agent systems, game theory, and large language models. Recently, she is particularly interested in exploring the application of large language models to address significant challenges in multi-agent systems and game theory. She has actively contributed to the multi-agent systems community, including her recent role as an organizing committee member of AAMAS’24. Additionally, she serves as a (senior) PC member of leading AI conferences (such as NeurIPS, ICML, ICLR, and ECAI) and a guest editor of Neurocomputing. </p>
-<p>In May 2024, Shuyue celebrated the arrival of a new addition to her family. Now, in her precious free time, she enjoys training her own intelligent agent---her lovely newborn daughter!</p>
+    @media only screen and (max-width: 576px) {
 
-<!-- <h3 id="selected-honors-and -awards">SELECTED HONORS AND AWARDS</h3>
+      .post__info,
+      .page__info {
+        margin: 40px auto 32px
+      }
+    }
+
+    page__title {
+      margin-bottom: 20px;
+      font-size: 62px;
+      line-height: 1.2
+    }
+
+    @media only screen and (max-width: 1140px) {
+
+      .post__title,
+      .page__title {
+        font-size: 64px
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+      .post__title,
+      .page__title {
+        font-size: 48px
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+      .post__title,
+      .page__title {
+        margin-bottom: 24px;
+        font-size: 32px
+      }
+    }
+  </style>
+  <div class="c-page">
+
+    <!-- begin content -->
+    <main class="content" aria-label="Content">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="page__info">
+              <h1 class="page__title">Short Bio</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <article class="page">
+          <div class="page__content">
+            <!-- <p>Link: <a href="./assets/CV (4).pdf">CV</a></p> -->
+
+            <!-- <h2 id="brief-biography">Brief Biography</h2> -->
+            <p>Shuyue Hu joined Shanghai Artificial Intelligence Lab in May 2022. Prior to this, she received her
+              bachelor degree at South China University of Technology in 2015 and her doctoral degree at the Chinese
+              University of Hong Kong under the supervision of Prof. Ho-fung Leung in 2019. From 2020 to 2022, she was a
+              postdoctoral research fellow working with Prof. Harold Soh at National University of Singapore, and Prof.
+              Georgios Piliouras at Singapore University of Technology and Design. </p>
+            <p>Shuyue’s research focuses on multi-agent systems, game theory, and large language models. She has
+              actively contributed to the multi-agent systems community, including her recent role as an organizing
+              committee member of AAMAS’24. Additionally, she serves as a (senior) PC member of leading AI conferences
+              (such as NeurIPS, ICML, ICLR, and ECAI) and a guest editor of Neurocomputing. </p>
+            <p>In May 2024, Shuyue celebrated the arrival of a new addition to her family. Now, in her precious free
+              time, she enjoys training her own intelligent agent---her lovely newborn daughter! </p>
+
+            <!-- <h3 id="selected-honors-and -awards">SELECTED HONORS AND AWARDS</h3>
 <ul>
   <li>
     Overseas High-Level Talents in Shanghai, 2023
@@ -162,16 +221,16 @@
 </ul> -->
 
 
-          <!-- begin contact -->
+            <!-- begin contact -->
 
-<div class="c-contact-form" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-  <div class="post__share">
-  <div class="share__head">
-  </div>
-  <!-- <ul class="share__list list-reset">
+            <div class="c-contact-form" id="contact">
+              <div class="container">
+                <div class="row">
+                  <div class="col col-12">
+                    <div class="post__share">
+                      <div class="share__head">
+                      </div>
+                      <!-- <ul class="share__list list-reset">
     <li class="share__item">
       <a class="share__link"
         href="https://sites.google.com/view/shuyue-hu"
@@ -194,103 +253,107 @@
     </li>
     
   </ul> -->
-</div>
+                    </div>
 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end contact -->
+            <!--bookshop-live end-->
+
+
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-</div>
-<!-- end contact -->
-          <!--bookshop-live end-->
 
+      <!--bookshop-live end-->
 
-</div>
-  </article>
-</div>
+      <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
 
-          <!--bookshop-live end-->
+      <!-- begin footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12">
+              <ul class="footer_nav list-reset">
 
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+                <li class="footer_nav__item">
+                  <a href="/" class="footer_nav__link">Home</a>
+                </li>
 
-    <!-- begin footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <ul class="footer_nav list-reset">
-          
-          <li class="footer_nav__item">
-            <a href="/" class="footer_nav__link">Home</a>
-          </li>
-          
-          <li class="footer_nav__item">
-            <a href="/Biography" class="footer_nav__link">Biography</a>
-          </li>
-          
-          <li class="footer_nav__item">
-             <a href="/research.html" class="footer_nav__link">Research</a>
-          </li>
+                <li class="footer_nav__item">
+                  <a href="/Biography" class="footer_nav__link">Biography</a>
+                </li>
 
-          <li class="footer_nav__item">
-            <a href="/team.html" class="footer_nav__link">Team</a>
-          </li>
+                <li class="footer_nav__item">
+                  <a href="/research.html" class="footer_nav__link">Research</a>
+                </li>
 
-          <li class="footer_nav__item">
-            <a href="/contact.html" class="footer_nav__link">Contact</a>
-          </li>
-        </ul>
-        <div class="copyright"><p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p></div>
+                <li class="footer_nav__item">
+                  <a href="/team.html" class="footer_nav__link">Team</a>
+                </li>
 
-      </div>
-    </div>
-  </div>
-</footer>
-<!-- end footer -->
+                <li class="footer_nav__item">
+                  <a href="/contact.html" class="footer_nav__link">Contact</a>
+                </li>
+              </ul>
+              <div class="copyright">
+                <p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a
+                    href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p>
+              </div>
 
-    <script src="/js/scripts.js"></script>
-    <script src="/js/common.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-$(document).ready(function() {
-    $('.filter-tag').click(function(e) {
-        e.preventDefault();
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
 
-        // remove active class from all tags
-        $('.filter-tag').removeClass('active');
-        
-        // add active class to the clicked tag
-        $(this).addClass('active');
+      <script src="/js/scripts.js"></script>
+      <script src="/js/common.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.filter-tag').click(function (e) {
+            e.preventDefault();
 
-        // get the tag from the clicked link
-        var filterTag = $(this).data('tag');
+            // remove active class from all tags
+            $('.filter-tag').removeClass('active');
 
-        if (filterTag === "All") {
-            // If "All" tag is clicked, show all posts
-            $('.c-blog-card').show();
-            return;  // exit from the function
-        }
+            // add active class to the clicked tag
+            $(this).addClass('active');
 
-        // loop through each blog card
-        $('.c-blog-card').each(function() {
-            var hasTag = false;
+            // get the tag from the clicked link
+            var filterTag = $(this).data('tag');
 
-            // check if this card has the tag
-            $(this).find('.c-blog-card__tag').each(function() {
-                if ($(this).text().trim() === filterTag) {
-                    hasTag = true;
-                }
-            });
-
-            // show/hide the card based on whether it has the tag
-            if (hasTag) {
-                $(this).show();
-            } else {
-                $(this).hide();
+            if (filterTag === "All") {
+              // If "All" tag is clicked, show all posts
+              $('.c-blog-card').show();
+              return;  // exit from the function
             }
-        });
-    });
-});
 
-    </script>
+            // loop through each blog card
+            $('.c-blog-card').each(function () {
+              var hasTag = false;
+
+              // check if this card has the tag
+              $(this).find('.c-blog-card__tag').each(function () {
+                if ($(this).text().trim() === filterTag) {
+                  hasTag = true;
+                }
+              });
+
+              // show/hide the card based on whether it has the tag
+              if (hasTag) {
+                $(this).show();
+              } else {
+                $(this).hide();
+              }
+            });
+          });
+        });
+
+      </script>
 </body>
+
 </html>

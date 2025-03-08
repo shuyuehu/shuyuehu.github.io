@@ -43,26 +43,26 @@
 
 <body>
 
-    
 
-    <!-- begin header -->
-<header class="c-header">
-  <div class="container">
-    <div class="row">
-      <div class="c-header__inner">
 
-        <nav class="main-nav">
-          <div class="main-nav__box">
+  <!-- begin header -->
+  <header class="c-header">
+    <div class="container">
+      <div class="row">
+        <div class="c-header__inner">
 
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
+          <nav class="main-nav">
+            <div class="main-nav__box">
 
-            <div class="nav__title">Menu</div>
+              <div class="nav__icon-close">
+                <i class="ion ion-md-close"></i>
+              </div>
+
+              <div class="nav__title">Menu</div>
 
               <ul class="nav__list list-reset">
 
-              
+
                 <!-- Home 页面，被标记为当前活跃 -->
                 <li class="nav__item">
                   <a href="index.html" class="nav__link">Home</a>
@@ -70,206 +70,339 @@
 
                 <!-- Research 页面 -->
                 <li class="nav__item">
-                    <a href="Biography.html" class="nav__link">Biography</a>
+                  <a href="Biography.html" class="nav__link">Biography</a>
                 </li>
 
                 <!-- Biography 页面 -->
                 <li class="nav__item">
-                    <a href="research.html" class="nav__link active">Research</a>
+                  <a href="research.html" class="nav__link active">Research</a>
                 </li>
 
                 <!-- Team 页面 -->
                 <li class="nav__item">
-                    <a href="team.html" class="nav__link">Team</a>
+                  <a href="team.html" class="nav__link">Team</a>
                 </li>
 
                 <!-- Contact 页面 -->
                 <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
+                  <a href="contact.html" class="nav__link">Contact</a>
                 </li>
-              
 
-            </ul>
+
+              </ul>
+            </div>
+
+            <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+            <!--bookshop-live end-->
+          </nav>
+
+          <div class="nav-button">
+            <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
           </div>
 
-          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
-          <!--bookshop-live end-->
-        </nav>
-
-        <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
         </div>
-
       </div>
     </div>
-  </div>
-</header>
-<!-- end header -->
-  
+  </header>
+  <!-- end header -->
 
-    <!-- 
+
+  <!-- 
         Bookshop components are accessed using the bookshop tag, 
         using the same syntax as the standard Jekyll include tag.
     -->
-    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+  <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
 
-<style>
-  page__info{max-width:760px;margin:96px auto 48px;text-align:center}@media only screen and (max-width: 1024px){.post__info,.page__info{max-width:100%;margin:40px auto}}@media only screen and (max-width: 576px){.post__info,.page__info{margin:40px auto 32px}}
-  page__title{margin-bottom:20px;font-size:62px;line-height:1.2}@media only screen and (max-width: 1140px){.post__title,.page__title{font-size:64px}}@media only screen and (max-width: 1024px){.post__title,.page__title{font-size:48px}}@media only screen and (max-width: 576px){.post__title,.page__title{margin-bottom:24px;font-size:32px}}
-</style>
+  <style>
+    page__info {
+      max-width: 760px;
+      margin: 96px auto 48px;
+      text-align: center
+    }
 
-<main class="content" aria-label="Content">
-  <div class="container">
-<div class="row">
-  <div class="col col-12">
-    <div class="page__info">
-      <h1 class="page__title">Research</h1>
+    @media only screen and (max-width: 1024px) {
+
+      .post__info,
+      .page__info {
+        max-width: 100%;
+        margin: 40px auto
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+      .post__info,
+      .page__info {
+        margin: 40px auto 32px
+      }
+    }
+
+    page__title {
+      margin-bottom: 20px;
+      font-size: 62px;
+      line-height: 1.2
+    }
+
+    @media only screen and (max-width: 1140px) {
+
+      .post__title,
+      .page__title {
+        font-size: 64px
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+      .post__title,
+      .page__title {
+        font-size: 48px
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+
+      .post__title,
+      .page__title {
+        margin-bottom: 24px;
+        font-size: 32px
+      }
+    }
+  </style>
+
+  <main class="content" aria-label="Content">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <div class="page__info">
+            <h1 class="page__title">Research</h1>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
 
-<!-- <div class="container">
+    <!-- <div class="container">
   <div class="c-page-heading">
     <h1 class="c-page-heading__title">Research</h1>
     
-      <p class="c-page-heading__description">Sorry, this page is temporarily unavailable. For the full list of publications, you can refer to Shuyue’s <a href="https://scholar.google.com/citations?hl=zh-CN&user=JLdYe_IAAAAJ"
+      <p class="c-page-heading__description">Sorry, this page is temporarily unavailable. For the full list of publications, you can refer to Shuyue's <a href="https://scholar.google.com/citations?hl=zh-CN&user=JLdYe_IAAAAJ"
         rel="external nofollow noopener" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/156/1020.html"
         rel="external nofollow noopener" target="_blank">DBLP</a> homepages.</p>
     
   </div>
 </div> -->
 
-<div class="container mt-5">
-  <div class="post">
-    <article>
-      <p>For the full list of publications, you can refer to Shuyue’s <a href="https://scholar.google.com/citations?hl=zh-CN&user=JLdYe_IAAAAJ"
-        rel="external nofollow noopener" target="_blank">Google Scholar</a> and <a href="https://dblp.org/pid/156/1020.html"
-        rel="external nofollow noopener" target="_blank">DBLP</a> homepages. </p>
-      <!-- <p>Below, please find a list of selected publications by our group in this field. For a complete list of
-        publications, please check <a href="https://scholar.google.com.hk/citations?user=JLdYe_IAAAAJ&hl"
-          rel="external nofollow noopener" target="_blank">Google Scholar</a>.</p> -->
-      <!-- <div class="publications">
-        <h2 class="bibliography">2023</h2>
-        <ol class="bibliography">
-          <li>
+    <div class="container mt-5">
+      <div class="post">
+        <article>
+          <p>Shuyue finds regularly updating her homepage demanding, and she has temporarily stopped updating this page…
+            For the full list of publications, you can refer to Shuyue’s <a
+              href="https://scholar.google.com/citations?hl=zh-CN&user=JLdYe_IAAAAJ" rel="external nofollow noopener"
+              target="_blank">Google Scholar</a>, <a href="https://dblp.org/pid/156/1020.html"
+              rel="external nofollow noopener" target="_blank">DBLP</a> and <a href="https://shuyuehu.alphaxiv.io/"
+              rel="external nofollow noopener" target="_blank">AlphaXiv</a> (where she has been quite active recently)
+            homepages. </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- 研究主题部分开始 -->
+    <!-- 主题1: 生成式智能体社会中的社会规范 -->
+    <div class="container mt-5">
+      <div class="research-topic">
+        <h2 class="topic-title">Topic 1</h2>
+        <p class="topic-abstract">Topic 1 abstract</p>
+
+        <div class="research-papers">
+          <div class="paper-item">
             <div class="row">
-              <div class="col-sm-2 preview">
-                <figure>
-                  <picture> <img src="./images/2023aaai.png"
-                      class="preview z-depth-1 rounded" width="100%" height="auto" alt="2023aaai.png"
-                      onerror="this.onerror=null; $(&#39;.responsive-img-srcset&#39;).remove();"> </picture>
-                </figure>
+              <div class="col-md-4">
+                <a href="blog/crsec.html">
+                  <img src="./images/CRSEC/figure1.png" alt="CRSEC" class="img-fluid rounded">
+                </a>
               </div>
-              <div id="colnaghi2023adaptations" class="col-sm-8">
-                <div class="title">Emergence of Punishment in Social Dilemma with Environmental Feedback
+              <div class="col-md-8">
+                <h3 class="paper-title">
+                  <a href="blog/crsec.html">Emergence of Social Norms in Generative Agent Societies: Principles and
+                    Architecture</a>
+                </h3>
+                <p class="paper-excerpt">
+                  To the best of our current knowledge, we presents the first agent architecture named CRSEC to empower
+                  the emergence of social norms within generative MASs.
+                </p>
+                <div class="paper-meta">
+                  <div class="author-info">
+                    <img src="./images/CRSEC/siyue ren.png" alt="Siyue Ren" class="author-image">
+                    <span class="author-name">Siyue Ren</span>
+                    <span class="paper-date">Mar 2024</span>
+                  </div>
+                  <div class="paper-links mt-2">
+                    <a href="assets/Emergence of Social Norms in Generative Agent Societies: Principles and Architecture.pdf" class="btn btn-sm btn-outline-secondary">PDF</a>
+                  </div>
                 </div>
-                <div class="author"> Zhen Wang,&nbsp;Zhao Song,&nbsp;Chen Shen, and Shuyue Hu </div>
-                <div class="periodical"> <em>Proceedings of the AAAI Conference on Artificial Intelligence</em>, 2023 </div>
-                <div class="periodical"> </div>
-                <div class="links"> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26383"
-                    class="btn btn-sm z-depth-1" role="button" rel="external nofollow noopener"
-                    target="_blank">HTML</a> </div>
               </div>
             </div>
-          </li>
-        </ol>
-      </div> -->
-    </article>
-  </header>
-  </div>
-</div>
-
-<div class="container animate">
-  <div class="row">
-    
-      <div class="c-blog-card col">
-  <div class="c-blog-card__inner">
-
-    
-    <div class="c-blog-card__image-wrap col col-6">
-      <a class="c-blog-card__image" href="blog/crsec.html">
-        <img alt="Emergence of Social Norms in Generative Agent Societies: Principles and Architecture" loading="lazy" src="./images/CRSEC/figure1.png">
-      </a>
-    </div>
-    
-
-    <div class="c-blog-card__content">
-
-      <h2 class="c-blog-card__title">
-        <a href="blog/crsec.html">Emergence of Social Norms in Generative Agent Societies: Principles and Architecture</a>
-      </h2>
-
-      <p class="c-blog-card__excerpt">
-        To the best of our current knowledge, we presents the first agent architecture named CRSEC to empower the emergence of social norms within generative MASs.
-      </p>
-
-      <div class="c-blog-card__meta">
-        <div class="c-blog-card__author-image">
-          <img alt="Siyue Ren" loading="lazy" src="./images/CRSEC/siyue ren.png">
-        </div>
-        <div class="c-blog-card__info">
-          <div class="c-blog-card__author-name">Siyue Ren</div>
-          <span class="c-blog-card__date">Mar 2024</span>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-      </div>
 
-  </div>
-</div>
-
-<div class="container animate">
-  <div class="row">
-<div class="c-blog-card col">
-  <div class="c-blog-card__inner">
-
-    
-    <div class="c-blog-card__image-wrap col col-6">
-      <a class="c-blog-card__image" href="blog/ipd.html">
-        <img alt="A Successful Strategy for Multichannel Iterated Prisoner’s Dilemma" loading="lazy" src="./images/IPD/figure1.png">
-      </a>
+    <div class="container">
+      <hr class="research-divider">
     </div>
-    
 
-    <div class="c-blog-card__content">
+    <!-- 主题2: 多通道囚徒困境 -->
+    <div class="container mt-4">
+      <div class="research-topic">
+        <h2 class="topic-title">Topic 2</h2>
+        <p class="topic-abstract">Topic 2 abstract</p>
 
-      <h2 class="c-blog-card__title">
-        <a href="blog/ipd.html">A Successful Strategy for Multichannel Iterated Prisoner’s Dilemma</a>
-      </h2>
-
-      <p class="c-blog-card__excerpt">
-        In this paper, we focus on multichannel IPD, and examine how an agent should behave to obtain generally high payoffs under this setting.
-      </p>
-
-      <div class="c-blog-card__meta">
-        <div class="c-blog-card__author-image">
-          <img alt="Zhaoheng Cao" loading="lazy" src="./images/IPD/Zhaoheng Cao.jpeg">
+        <div class="research-papers">
+          <div class="paper-item">
+            <div class="row">
+              <div class="col-md-4">
+                <a href="blog/ipd.html">
+                  <img src="./images/IPD/figure1.png" alt="IPD" class="img-fluid rounded">
+                </a>
+              </div>
+              <div class="col-md-8">
+                <h3 class="paper-title">
+                  <a href="blog/ipd.html">A Successful Strategy for Multichannel Iterated Prisoner's Dilemma</a>
+                </h3>
+                <p class="paper-excerpt">
+                  In this paper, we focus on multichannel IPD, and examine how an agent should behave to obtain
+                  generally
+                  high payoffs under this setting.
+                </p>
+                <div class="paper-meta">
+                  <div class="author-info">
+                    <img src="./images/IPD/Zhaoheng Cao.jpeg" alt="Zhaoheng Cao" class="author-image">
+                    <span class="author-name">Zhaoheng Cao</span>
+                    <span class="paper-date">Mar 2024</span>
+                  </div>
+                  <div class="paper-links mt-2">
+                    <a href="assets/A Successful Strategy for Multichannel Iterated Prisoner's Dilemma.pdf" class="btn btn-sm btn-outline-secondary">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="c-blog-card__info">
-          <div class="c-blog-card__author-name">Zhaoheng Cao</div>
-          <span class="c-blog-card__date">Mar 2024</span>
-        </div>
       </div>
-
     </div>
-  </div>
-</div>
-</div>
-</div>
 
-          <!-- begin contact -->
+    <!-- 可以添加更多研究主题 -->
+    <!-- <div class="container">
+      <hr class="research-divider">
+    </div>
+    
+    <div class="container mt-4">
+      <div class="research-topic">
+        <h2 class="topic-title">Additional Research Topic</h2>
+        <p class="topic-abstract">Abstract for additional research topic goes here.</p>
+        
+        <div class="research-papers">
+          <!-- 添加更多论文 -->
+    <!-- </div>
+      </div>
+    </div> -->
+    <!-- 研究主题部分结束 -->
 
-<div class="c-contact-form" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-  <div class="post__share">
-  <div class="share__head">
-  </div>
-  <!-- <ul class="share__list list-reset">
+    <!-- 添加自定义CSS样式 -->
+    <style>
+      .research-topic {
+        margin-bottom: 30px;
+      }
+
+      .topic-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .topic-abstract {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 25px;
+      }
+
+      .research-divider {
+        border-top: 1px solid #ddd;
+        margin: 40px 0;
+      }
+
+      .research-divider::before,
+      .research-divider::after {
+        content: none !important;
+        /* 移除伪元素 */
+        display: none !important;
+      }
+
+
+      .paper-item {
+        margin-bottom: 30px;
+      }
+
+      .paper-title {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .paper-title a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .paper-title a:hover {
+        color: #007bff;
+      }
+
+      .paper-excerpt {
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      .paper-meta {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .author-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .author-image {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .author-name {
+        font-weight: 500;
+        margin-right: 15px;
+      }
+
+      .paper-date {
+        color: #888;
+      }
+
+      .paper-links {
+        margin-top: 5px;
+      }
+    </style>
+
+    <!-- begin contact -->
+
+    <div class="c-contact-form" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="post__share">
+              <div class="share__head">
+              </div>
+              <!-- <ul class="share__list list-reset">
     <li class="share__item">
       <a class="share__link"
         href="https://sites.google.com/view/shuyue-hu"
@@ -292,101 +425,105 @@
     </li>
     
   </ul> -->
-</div>
+            </div>
 
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- end contact -->
-          <!--bookshop-live end-->
+    <!-- end contact -->
+    <!--bookshop-live end-->
 
 
-</div>
+    </div>
 
-          <!--bookshop-live end-->
+    <!--bookshop-live end-->
 
     <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
 
     <!-- begin footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <ul class="footer_nav list-reset">
-          
-          <li class="footer_nav__item">
-            <a href="/" class="footer_nav__link">Home</a>
-          </li>
-          
-          <li class="footer_nav__item">
-            <a href="/Biography" class="footer_nav__link">Biography</a>
-          </li>
-          
-          <li class="footer_nav__item">
-            <a href="/Research" class="footer_nav__link">Research</a>
-          </li>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <ul class="footer_nav list-reset">
 
-          <li class="footer_nav__item">
-            <a href="/Team" class="footer_nav__link">Team</a>
-          </li>
+              <li class="footer_nav__item">
+                <a href="/" class="footer_nav__link">Home</a>
+              </li>
 
-          <li class="footer_nav__item">
-            <a href="/Contact" class="footer_nav__link">Contact</a>
-          </li>
-        </ul>
-        <div class="copyright"><p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p></div>
+              <li class="footer_nav__item">
+                <a href="/Biography" class="footer_nav__link">Biography</a>
+              </li>
 
+              <li class="footer_nav__item">
+                <a href="/Research" class="footer_nav__link">Research</a>
+              </li>
+
+              <li class="footer_nav__item">
+                <a href="/Team" class="footer_nav__link">Team</a>
+              </li>
+
+              <li class="footer_nav__item">
+                <a href="/Contact" class="footer_nav__link">Contact</a>
+              </li>
+            </ul>
+            <div class="copyright">
+              <p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a
+                  href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
-<!-- end footer -->
+    </footer>
+    <!-- end footer -->
 
     <script src="/js/scripts.js"></script>
     <script src="/js/common.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-$(document).ready(function() {
-    $('.filter-tag').click(function(e) {
-        e.preventDefault();
+      $(document).ready(function () {
+        $('.filter-tag').click(function (e) {
+          e.preventDefault();
 
-        // remove active class from all tags
-        $('.filter-tag').removeClass('active');
-        
-        // add active class to the clicked tag
-        $(this).addClass('active');
+          // remove active class from all tags
+          $('.filter-tag').removeClass('active');
 
-        // get the tag from the clicked link
-        var filterTag = $(this).data('tag');
+          // add active class to the clicked tag
+          $(this).addClass('active');
 
-        if (filterTag === "All") {
+          // get the tag from the clicked link
+          var filterTag = $(this).data('tag');
+
+          if (filterTag === "All") {
             // If "All" tag is clicked, show all posts
             $('.c-blog-card').show();
             return;  // exit from the function
-        }
+          }
 
-        // loop through each blog card
-        $('.c-blog-card').each(function() {
+          // loop through each blog card
+          $('.c-blog-card').each(function () {
             var hasTag = false;
 
             // check if this card has the tag
-            $(this).find('.c-blog-card__tag').each(function() {
-                if ($(this).text().trim() === filterTag) {
-                    hasTag = true;
-                }
+            $(this).find('.c-blog-card__tag').each(function () {
+              if ($(this).text().trim() === filterTag) {
+                hasTag = true;
+              }
             });
 
             // show/hide the card based on whether it has the tag
             if (hasTag) {
-                $(this).show();
+              $(this).show();
             } else {
-                $(this).hide();
+              $(this).hide();
             }
+          });
         });
-    });
-});
+      });
 
     </script>
 </body>
+
 </html>

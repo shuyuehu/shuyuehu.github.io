@@ -43,26 +43,26 @@
 
 <body>
 
-    
 
-    <!-- begin header -->
-<header class="c-header">
-  <div class="container">
-    <div class="row">
-      <div class="c-header__inner">
 
-        <nav class="main-nav">
-          <div class="main-nav__box">
+  <!-- begin header -->
+  <header class="c-header">
+    <div class="container">
+      <div class="row">
+        <div class="c-header__inner">
 
-            <div class="nav__icon-close">
-              <i class="ion ion-md-close"></i>
-            </div>
+          <nav class="main-nav">
+            <div class="main-nav__box">
 
-            <div class="nav__title">Menu</div>
+              <div class="nav__icon-close">
+                <i class="ion ion-md-close"></i>
+              </div>
+
+              <div class="nav__title">Menu</div>
 
               <ul class="nav__list list-reset">
 
-              
+
                 <!-- Home 页面，被标记为当前活跃 -->
                 <li class="nav__item">
                   <a href="index.html" class="nav__link active">Home</a>
@@ -70,62 +70,114 @@
 
                 <!-- Research 页面 -->
                 <li class="nav__item">
-                    <a href="Biography.html" class="nav__link">Biography</a>
+                  <a href="Biography.html" class="nav__link">Biography</a>
                 </li>
 
                 <!-- Biography 页面 -->
                 <li class="nav__item">
-                    <a href="research.html" class="nav__link">Research</a>
+                  <a href="research.html" class="nav__link">Research</a>
                 </li>
 
                 <!-- Team 页面 -->
                 <li class="nav__item">
-                    <a href="team.html" class="nav__link">Team</a>
+                  <a href="team.html" class="nav__link">Team</a>
                 </li>
 
                 <!-- Contact 页面 -->
                 <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
+                  <a href="contact.html" class="nav__link">Contact</a>
                 </li>
-              
 
-            </ul>
+
+              </ul>
+            </div>
+
+            <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+            <!--bookshop-live end-->
+          </nav>
+
+          <div class="nav-button">
+            <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
           </div>
 
-          <!--bookshop-live name(social-link.jekyll.html) params() context() -->
-          <!--bookshop-live end-->
-        </nav>
-
-        <div class="nav-button">
-          <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
         </div>
-
       </div>
     </div>
-  </div>
-</header>
-<!-- end header -->
+  </header>
+  <!-- end header -->
 
-<style>
-  hero{margin:96px 0}@media only screen and (max-width: 1024px){.hero{margin:40px 0}}.hero__inner .hero__title{margin-bottom:32px;font-size:68px;line-height:1.2;color:var(--heading-font-color)}@media only screen and (max-width: 1140px){.hero__inner .hero__title{font-size:60px}}@media only screen and (max-width: 1024px){.hero__inner .hero__title{font-size:50px}}@media only screen and (max-width: 768px){.hero__inner .hero__title{margin-bottom:24px;font-size:40px}}@media only screen and (max-width: 576px){.hero__inner .hero__title{font-size:32px}}.hero__inner .hero__description{margin-bottom:0;font-size:24px;color:var(--text-alt-color)}@media only screen and (max-width: 1024px){.hero__inner .hero__description{font-size:inherit}}
-</style>    
+  <style>
+    hero {
+      margin: 96px 0
+    }
 
-    <!-- 
+    @media only screen and (max-width: 1024px) {
+      .hero {
+        margin: 40px 0
+      }
+    }
+
+    .hero__inner .hero__title {
+      margin-bottom: 32px;
+      font-size: 68px;
+      line-height: 1.2;
+      color: var(--heading-font-color)
+    }
+
+    @media only screen and (max-width: 1140px) {
+      .hero__inner .hero__title {
+        font-size: 60px
+      }
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .hero__inner .hero__title {
+        font-size: 50px
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .hero__inner .hero__title {
+        margin-bottom: 24px;
+        font-size: 40px
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .hero__inner .hero__title {
+        font-size: 32px
+      }
+    }
+
+    .hero__inner .hero__description {
+      margin-bottom: 0;
+      font-size: 24px;
+      color: var(--text-alt-color)
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .hero__inner .hero__description {
+        font-size: inherit
+      }
+    }
+  </style>
+
+  <!-- 
         Bookshop components are accessed using the bookshop tag, 
         using the same syntax as the standard Jekyll include tag.
     -->
-    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
-          
-<div class="c-page">
+  <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
+
+  <div class="c-page">
 
 
     <!--bookshop-live name(hero/hero.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
-          <!-- begin hero -->
+    <!-- begin hero -->
 
-<section class="c-hero animate">
-  <div class="container">
-          
-          <!-- <div>
+    <section class="c-hero animate">
+      <div class="container">
+
+        <!-- <div>
           <img class="corner-image" src="/images/me.jpg" width="300" height="400" align ="left">  
             <h1 class="c-hero__title">Hello! I'm xxxxx</h1>
             <div class="c-hero__description"><p style="margin-left: 400px;">Welcome to my page! I am 
@@ -139,81 +191,110 @@
             in multi-agent system, game theory, reinforcement learning, and large language model.</p>
             </div> 
           <div/> -->
-            <div class="row">
-              <div class="col col-12 col-d-12">
-                <div class="hero__inner">
-                  <img src="/images/shuyuehu.png" alt="shuyuehu's Picture" style="margin:0 25px 0 0;float:left;width:240px;height:auto;">
-                  <h1 class="hero__title">Hello, I'm Shuyue.</h1>
-                  <p  style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 22px;",class="hero__description">I’m a researcher at <a href="https://www.shlab.org.cn/" style="text-decoration: underline;">Shanghai Artificial Intelligence Laboratory<a>, Shanghai, China. 
-                    Previously, I completed my Ph.D. at the Chinese University of Hong Kong and was a postdoctoral research fellow at Singapore University of Technology and Design and
-                    National University of Singapore. 
-                    <p style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 22px;",class="hero__description">My research interests are in multi-agent systems, game theory, and large language models.</p>
-                </div>
-              </div>
+        <div class="row">
+          <div class="col col-12 col-d-12">
+            <div class="hero__inner">
+              <img src="/images/shuyuehu.png" alt="shuyuehu's Picture"
+                style="margin:0 25px 0 0;float:left;width:240px;height:auto;">
+              <h1 class="hero__title">Hello, I'm Shuyue.</h1>
+              <p style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 22px;"
+                ,class="hero__description">I’m a researcher at <a href="https://www.shlab.org.cn/"
+                  style="text-decoration: underline;">Shanghai Artificial Intelligence Laboratory<a>, Shanghai, China.
+                    My research interests are broadly in multi-agent systems, large language models, and game theory.
+                    <br>
+                    Recently, I’m particularly interested in the intersection of large language models and multi-agent
+                    systems, specifically: (i) how to enhance the performance of LLMs through the lens of multi-agent
+                    systems, and (ii) how to leverage LLMs to tackle the open challenges within multi-agent systems.
+              </p>
             </div>
           </div>
-            <!-- <div style="font-size: small;">Image: Christine Daniloff, MIT</div> -->
-</section>
+        </div>
+      </div>
+      <!-- <div style="font-size: small;">Image: Christine Daniloff, MIT</div> -->
+    </section>
 
 
-<!-- end hero -->
-          <!--bookshop-live end-->
+    <!-- end hero -->
+    <!--bookshop-live end-->
 
     <!--bookshop-live name(blog-section/blog-section.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
-          <!-- begin blog -->
+    <!-- begin blog -->
 
-<div class="container">
-  <div class="row">
-      <div class="col col-12">
-        <h2>What’s new:</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h2>What’s new:</h2>
           <ul>
             <div class="wrap" style="margin-top: 10px;">
               <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">October 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;"> Our paper Beyond a Binary Theorizing of Prosociality" was accepted to PNAS!</p>
+                <p
+                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                  October 2024</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;"> Our
+                  paper Beyond a Binary Theorizing of Prosociality" was accepted to PNAS!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Emergence of Social Norms in Generative Agent Societies: Principles and Architecture” was accepted to the HAI track (acceptance rate: 4%) of IJCAI 2024!</p>
+                <p
+                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                  May 2024</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
+                  paper “Emergence of Social Norms in Generative Agent Societies: Principles and Architecture” was
+                  accepted to the HAI track (acceptance rate: 4%) of IJCAI 2024!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">May 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “Configurable Mirror Descent: Towards a Unification of Decision Making” was accepted to ICML 2024!</p>
+                <p
+                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                  May 2024</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
+                  paper “Configurable Mirror Descent: Towards a Unification of Decision Making” was accepted to ICML
+                  2024!</p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">April 2024</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “A Successful Strategy for Multichannel Iterated Prisoner's Dilemma” was accepted to IJCAI 2024!</p>
+                <p
+                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                  April 2024</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
+                  paper “A Successful Strategy for Multichannel Iterated Prisoner's Dilemma” was accepted to IJCAI 2024!
+                </p>
               </div>
               <div style="display: flex; align-items: center; margin-top: 20px;">
-                <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">December 2023</p>
-                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games” was accepted to AAMAS 2024!</p>
+                <p
+                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                  December 2023</p>
+                <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
+                  paper “The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games” was accepted to AAMAS
+                  2024!</p>
               </div>
-        
-        </div>
+
+            </div>
           </ul>
           <a href="#" onclick="toggleNews(); return false;">Click Here for More News ...</a>
           <div id="news" style="display: none; margin-top: 20px;">
             <div style="display: flex; align-items: center;">
-              <p style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">September 2023</p>
-              <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium” was accepted to NeurIPS 2023!</p>
+              <p
+                style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
+                September 2023</p>
+              <p style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
+                paper “The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to
+                Equilibrium” was accepted to NeurIPS 2023!</p>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
 
 
 
-          <!-- begin contact -->
+    <!-- begin contact -->
 
-<div class="c-contact-form" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-  <div class="post__share">
-  <div class="share__head">
-  </div>
-  <!-- <ul class="share__list list-reset">
+    <div class="c-contact-form" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="post__share">
+              <div class="share__head">
+              </div>
+              <!-- <ul class="share__list list-reset">
     <li class="share__item">
       <a class="share__link"
         href="https://sites.google.com/view/shuyue-hu"
@@ -236,57 +317,60 @@
     </li>
     
   </ul> -->
-</div>
+            </div>
 
+          </div>
+        </div>
       </div>
     </div>
+    <!-- end contact -->
+    <!--bookshop-live end-->
+
+
   </div>
-</div>
-<!-- end contact -->
-          <!--bookshop-live end-->
 
+  <!--bookshop-live end-->
 
-</div>
+  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
 
-          <!--bookshop-live end-->
+  <!-- begin footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <ul class="footer_nav list-reset">
 
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+            <li class="footer_nav__item">
+              <a href="/" class="footer_nav__link">Home</a>
+            </li>
 
-    <!-- begin footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <ul class="footer_nav list-reset">
-          
-          <li class="footer_nav__item">
-            <a href="/" class="footer_nav__link">Home</a>
-          </li>
-          
-          <li class="footer_nav__item">
-            <a href="/Biography" class="footer_nav__link">Biography</a>
-          </li>
-          
-          <li class="footer_nav__item">
-            <a href="/research.html" class="footer_nav__link">Research</a>
-          </li>
+            <li class="footer_nav__item">
+              <a href="/Biography" class="footer_nav__link">Biography</a>
+            </li>
 
-          <li class="footer_nav__item">
-            <a href="/team.html" class="footer_nav__link">Team</a>
-          </li>
+            <li class="footer_nav__item">
+              <a href="/research.html" class="footer_nav__link">Research</a>
+            </li>
 
-          <li class="footer_nav__item">
-            <a href="/contact.html" class="footer_nav__link">Contact</a>
-          </li>
-        </ul>
-        <div class="copyright"><p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p></div>
+            <li class="footer_nav__item">
+              <a href="/team.html" class="footer_nav__link">Team</a>
+            </li>
 
+            <li class="footer_nav__item">
+              <a href="/contact.html" class="footer_nav__link">Contact</a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p> 2024 &copy; <a href="/">shuyue-hu.</a> Theme <a
+                href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-</footer>
-<!-- end footer -->
-    <script>
+  </footer>
+  <!-- end footer -->
+  <script>
     function toggleNews() {
       var newsDiv = document.getElementById('news');
       if (newsDiv.style.display === 'none') {
@@ -295,19 +379,19 @@
         newsDiv.style.display = 'none';
       }
     }
-    </script>
+  </script>
 
-    <script src="/js/scripts.js"></script>
-    <script src="/js/common.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-$(document).ready(function() {
-    $('.filter-tag').click(function(e) {
+  <script src="/js/scripts.js"></script>
+  <script src="/js/common.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.filter-tag').click(function (e) {
         e.preventDefault();
 
         // remove active class from all tags
         $('.filter-tag').removeClass('active');
-        
+
         // add active class to the clicked tag
         $(this).addClass('active');
 
@@ -315,32 +399,33 @@ $(document).ready(function() {
         var filterTag = $(this).data('tag');
 
         if (filterTag === "All") {
-            // If "All" tag is clicked, show all posts
-            $('.c-blog-card').show();
-            return;  // exit from the function
+          // If "All" tag is clicked, show all posts
+          $('.c-blog-card').show();
+          return;  // exit from the function
         }
 
         // loop through each blog card
-        $('.c-blog-card').each(function() {
-            var hasTag = false;
+        $('.c-blog-card').each(function () {
+          var hasTag = false;
 
-            // check if this card has the tag
-            $(this).find('.c-blog-card__tag').each(function() {
-                if ($(this).text().trim() === filterTag) {
-                    hasTag = true;
-                }
-            });
-
-            // show/hide the card based on whether it has the tag
-            if (hasTag) {
-                $(this).show();
-            } else {
-                $(this).hide();
+          // check if this card has the tag
+          $(this).find('.c-blog-card__tag').each(function () {
+            if ($(this).text().trim() === filterTag) {
+              hasTag = true;
             }
-        });
-    });
-});
+          });
 
-    </script>
+          // show/hide the card based on whether it has the tag
+          if (hasTag) {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        });
+      });
+    });
+
+  </script>
 </body>
+
 </html>
