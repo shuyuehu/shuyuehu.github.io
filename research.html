@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research</title>
+
+  <link rel="canonical" href="http://localhost:6060/research.html">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="shuyuehu">
+  <meta name="twitter:description" content="Machine Learning and Data Science">
+  <meta name="twitter:image:src" content="">
+
+  <meta property="og:title" content="shuyuehu">
+  <meta property="og:description" content="Machine Learning and Data Science">
+  <meta property="og:image" content="">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/main.css">
+
+  <style>
+    .research-page.page {
+      max-width: 980px;
+      margin-top: 96px;
+    }
+
+    .research-topics-nav {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      white-space: nowrap;
+      gap: 10px;
+      margin: 0 0 36px;
+      padding: 0 0 6px;
+      list-style: none;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .research-topics-nav li {
+      margin: 0;
+      flex: 0 0 auto;
+    }
+
+    .research-topics-nav a {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #d5dce3;
+      border-radius: 999px;
+      border-bottom: 1px solid #d5dce3;
+      font-size: 14px;
+      line-height: 1.4;
+      text-decoration: none;
+    }
+
+    .research-topics-nav a:hover {
+      color: #003687;
+      border-color: #1495a7;
+    }
+
+    .research-topic {
+      margin-top: 32px;
+      padding-top: 30px;
+      border-top: 1px solid #e6ebf1;
+      scroll-margin-top: 110px;
+    }
+
+    .research-topic h2 {
+      margin-bottom: 12px;
+      font-size: 32px;
+      line-height: 1.25;
+    }
+
+    .research-topic__desc {
+      margin-bottom: 16px;
+      color: #5a6072;
+      line-height: 1.75;
+    }
+
+    .research-paper-list {
+      margin: 0 0 0 22px;
+      padding: 0;
+    }
+
+    .research-paper-list li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .research-page.page {
+        margin-top: 40px;
+      }
+
+      .research-topic h2 {
+        font-size: 28px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      .research-topic h2 {
+        font-size: 24px;
+      }
+
+      .research-topics-nav a {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="c-header">
+    <div class="container">
+      <div class="row">
+        <div class="c-header__inner">
+
+          <nav class="main-nav">
+            <div class="main-nav__box">
+
+              <div class="nav__icon-close">
+                <i class="ion ion-md-close"></i>
+              </div>
+
+              <div class="nav__title">Menu</div>
+
+              <ul class="nav__list list-reset">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Home</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="Biography.html" class="nav__link">Biography</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="research.html" class="nav__link active">Research</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="contact.html" class="nav__link">Contact</a>
+                </li>
+
+                <li class="nav__item">
+                  <a href="https://llm-agent-tutorial.github.io/website/" class="nav__link" target="_blank" rel="noopener noreferrer">Agent Tutorial</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="nav-button">
+            <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content" aria-label="Content">
+    <div class="container mt-5">
+      <article class="page research-page">
+        <div class="page__content">
+          
+          <h2 id="topics-2022-2026">Topics</h2>
+
+          <ul class="research-topics-nav list-reset">
+            <li><a href="#topic-1">LLM Routing and Aggregation</a></li>
+            <li><a href="#topic-2">LLM-based Agent</a></li>
+            <li><a href="#topic-3">LLM-based MAS</a></li>
+            <li><a href="#topic-4">LLM Reasoning and Reinforcement Learning</a></li>
+            <li><a href="#topic-5">Multi-Agent Learning in Games</a></li>
+            <li><a href="#topic-6">Cooperation in Social Dilemmas</a></li>
+            <li><a href="#topic-7">LLM Meets Psychology</a></li>
+          </ul>
+
+          <section class="research-topic" id="topic-1">
+            <h2>LLM Routing and Aggregation</h2>
+            <p class="research-topic__desc">Leveraging multiple LLMs to improve collective performance and efficiency.</p>
+            <ol class="research-paper-list">
+              <li>
+                Beyond Gemini-3-Pro: Revisiting LLM Routing and Aggregation at Scale <a href="https://arxiv.org/abs/2601.01330" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing <a href="https://arxiv.org/abs/2601.07206" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Beyond GPT-5: Making LLMs Cheaper and Better via Performance-Efficiency Optimized Routing <a href="https://dl.acm.org/doi/abs/10.1145/3772429.3772445" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                ICL-Router: In-Context Learned Model Representations for LLM Routing <a href="https://arxiv.org/abs/2510.09719" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scales Test-Time Compute <a href="https://arxiv.org/abs/2504.00762" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants <a href="https://arxiv.org/abs/2505.19797" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Open-Source LLMs Collaboration Beats Closed-Source LLMs: A Scalable Multi-Agent System <a href="https://arxiv.org/abs/2507.14200" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Learning Compact Representations of LLM Abilities via Item Response Theory <a href="https://arxiv.org/abs/2510.00844" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging <a href="https://arxiv.org/abs/2505.15875" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Nature-Inspired Population-Based Evolution of Large Language Models <a href="https://arxiv.org/abs/2503.01155" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                A Comprehensive Survey of LLM-Driven Collective Intelligence: Past, Present, and Future <a href="https://www.researchgate.net/publication/395091975_A_Comprehensive_Survey_of_LLM-Driven_Collective_Intelligence_Past_Present_and_Future" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-2">
+            <h2>LLM-based Agent</h2>
+            <p class="research-topic__desc">Agent architectures, memory systems, workflow generation, and long-horizon task execution for LLM-based agents.</p>
+            <ol class="research-paper-list">
+              <li>
+                Single-Agent Scaling Fails Multi-Agent Intelligence: Towards Foundation Models with Native Multi-Agent Intelligence <a href="https://arxiv.org/abs/2512.08743" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                If Multi-Agent Debate is the Answer, What is the Question? <a href="https://arxiv.org/abs/2502.08788" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                MemVerse: Multimodal Memory for Lifelong Learning Agents <a href="https://arxiv.org/abs/2512.03627" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                EvoFlow: Evolving Diverse Agentic Workflows On The Fly <a href="https://arxiv.org/abs/2502.07373" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration <a href="https://arxiv.org/abs/2508.18040" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale <a href="https://arxiv.org/abs/2603.02176" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                InternAgent-1.5: A Unified Agentic Framework for Long-Horizon Autonomous Scientific Discovery <a href="https://arxiv.org/abs/2602.08990" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Hands-on LLM-based Agents: A Tutorial for General Audiences <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5747025" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-3">
+            <h2>LLM-based MAS</h2>
+            <p class="research-topic__desc">Multi-agent mechanisms built with LLM-based agents, focusing on norms, reputation, and social interaction.</p>
+            <ol class="research-paper-list">
+              <li>
+                Beyond the Tragedy of the Commons: Building A Reputation System for Generative Multi-agent Systems <a href="https://arxiv.org/abs/2505.05029" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Emergence of Social Norms in Generative Agent Societies: Principles and Architecture <a href="https://arxiv.org/abs/2403.08251" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                OASIS: Open Agent Social Interaction Simulations with One Million Agents <a href="https://arxiv.org/abs/2411.11581" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                An AI Researchers&#x27; Perspective: At the Crossroad of LLMs, Agent-Based Modeling, and Complex Systems <a href="https://doi.org/10.1016/j.plrev.2025.03.015" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-4">
+            <h2>LLM Reasoning and Reinforcement Learning</h2>
+            <p class="research-topic__desc">Methods that improve LLM reasoning, mostly through the lens of reinforcement learning.</p>
+            <ol class="research-paper-list">
+              <li>
+                Reinforcement Learning for Large Language Models via Group Preference Reward Shaping <a href="https://aclanthology.org/2025.emnlp-main.1085/" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Squeeze the Soaked Sponge: Efficient Off-policy Reinforcement Finetuning for Large Language Model <a href="https://arxiv.org/abs/2507.06892" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback <a href="https://arxiv.org/abs/2510.02752" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                Scaling Physical Reasoning with the PHYSICS Dataset <a href="https://arxiv.org/abs/2506.00022" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning <a href="https://arxiv.org/abs/2503.09501" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                PhysicsMinions: Winning Gold Medals in the Latest Physics Olympiads with a Coevolutionary Multimodal Multi-Agent System <a href="https://arxiv.org/abs/2509.24855" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+              <li>
+                MARTI-MARS: Scaling Multi-Agent Self-Search via Reinforcement Learning for Code Generation <a href="https://arxiv.org/abs/2602.07848" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-5">
+            <h2>Multi-Agent Learning in Games</h2>
+            <p class="research-topic__desc">Theoretical analyses of multi-agent learning dynamics and equilibrium behavior.</p>
+            <ol class="research-paper-list">
+              <li>
+                A Formal Model for Multiagent Q-Learning on Graphs <a href="https://doi.org/10.1007/s11432-024-4289-6" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Provably Efficient Information-Directed Sampling Algorithms for Multi-Agent Reinforcement Learning <a href="https://www.sciencedirect.com/science/article/pii/S0004370225001110" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Payoff Control in Multichannel Games: Influencing Opponent Learning Evolution <a href="https://doi.org/10.1109/TCYB.2024.3507830" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Regret Minimization in Population Network Games: Vanishing Heterogeneity and Convergence to Equilibria <a href="https://doi.org/10.1109/TNNLS.2025.3565266" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games <a href="https://dl.acm.org/doi/10.5555/3635637.3662966" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                A Pair-Approximation Method for Modelling the Dynamics of Multi-Agent Stochastic Games <a href="https://dblp.org/rec/conf/aaai/ChuYHM023" target="_blank" rel="noopener noreferrer">(record)</a>
+              </li>
+              <li>
+                Learning by Reusing Previous Advice: A Memory-Based Teacher-Student Framework <a href="https://link.springer.com/article/10.1007/s10458-022-09595-1" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/f39931608cdc52d7d9f8ba7003af9136-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Individual-Level Inverse Reinforcement Learning for Mean Field Games <a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p253.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Modelling the Dynamics of Multi-Agent Q-Learning: The Stochastic Effects of Local Interaction and Incomplete Information <a href="https://www.ijcai.org/proceedings/2022/55" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Modelling the Dynamics of Regret Minimization in Large Agent Populations: A Master Equation Approach <a href="https://www.ijcai.org/proceedings/2022/76" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                The Dynamics of Q-Learning in Population Games: A Physics-Inspired Continuity Equation Model <a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p615.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Dynamics of Q-Learning in Networked Stochastic Games <a href="https://doi.org/10.1109/TNNLS.2025.3641365" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-6">
+            <h2>Cooperation in Social Dilemmas</h2>
+            <p class="research-topic__desc">Understanding cooperation emergence in social dilemma games.</p>
+            <ol class="research-paper-list">
+              <li>
+                A Successful Strategy for Multichannel Iterated Prisoner&#x27;s Dilemma <a href="https://www.ijcai.org/proceedings/2024/0031.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas <a href="https://doi.org/10.1016/j.neucom.2024.128514" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Emergence of Punishment in Social Dilemma with Environmental Feedback <a href="https://dblp.org/rec/conf/aaai/WangSSH23" target="_blank" rel="noopener noreferrer">(record)</a>
+              </li>
+              <li>
+                Facilitating Cooperation in Human-Agent Hybrid Populations through Autonomous Agents <a href="https://www.sciencedirect.com/science/article/pii/S2589004223022563" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                How Committed Individuals Shape Social Dynamics: A Survey on Coordination Games and Social Dilemma Games <a href="https://doi.org/10.1209/0295-5075/acfb34" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Beyond a Binary Theorizing of Prosociality <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2412195121" target="_blank" rel="noopener noreferrer">(paper)</a>
+              </li>
+              <li>
+                Large Language Models Overcome the Machine Penalty When Acting Fairly but Not When Acting Selfishly or Altruistically <a href="https://arxiv.org/abs/2410.03724" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+            </ol>
+          </section>
+
+          <section class="research-topic" id="topic-7">
+            <h2>LLM Meets Psychology</h2>
+            <ol class="research-paper-list">
+              <li>
+                Large Language Models are Near-Optimal Decision-Makers with a Non-Human Learning Behavior <a href="https://arxiv.org/abs/2506.16163" target="_blank" rel="noopener noreferrer">(arXiv)</a>
+              </li>
+            </ol>
+          </section>
+
+        </div>
+      </article>
+    </div>
+
+    <div class="c-contact-form" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col col-12">
+            <div class="post__share">
+              <div class="share__head"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <ul class="footer_nav list-reset">
+            <li class="footer_nav__item">
+              <a href="index.html" class="footer_nav__link">Home</a>
+            </li>
+
+            <li class="footer_nav__item">
+              <a href="Biography.html" class="footer_nav__link">Biography</a>
+            </li>
+
+            <li class="footer_nav__item">
+              <a href="research.html" class="footer_nav__link">Research</a>
+            </li>
+
+            <li class="footer_nav__item">
+              <a href="contact.html" class="footer_nav__link">Contact</a>
+            </li>
+
+            <li class="footer_nav__item">
+              <a href="https://llm-agent-tutorial.github.io/website/" class="footer_nav__link" target="_blank" rel="noopener noreferrer">Agent Tutorial</a>
+            </li>
+          </ul>
+          <div class="copyright">
+            <p> 2024 &copy; <a href="index.html">shuyue-hu.</a> Theme <a href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
