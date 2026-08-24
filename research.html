@@ -22,98 +22,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet">
   <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/croissant-home.css">
+  <link rel="stylesheet" href="assets/inner-pages.css?v=5">
 
-  <style>
-    .research-page.page {
-      max-width: 980px;
-      margin-top: 96px;
-    }
-
-    .research-topics-nav {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      white-space: nowrap;
-      gap: 10px;
-      margin: 0 0 36px;
-      padding: 0 0 6px;
-      list-style: none;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .research-topics-nav li {
-      margin: 0;
-      flex: 0 0 auto;
-    }
-
-    .research-topics-nav a {
-      display: inline-block;
-      padding: 8px 14px;
-      border: 1px solid #d5dce3;
-      border-radius: 999px;
-      border-bottom: 1px solid #d5dce3;
-      font-size: 14px;
-      line-height: 1.4;
-      text-decoration: none;
-    }
-
-    .research-topics-nav a:hover {
-      color: #003687;
-      border-color: #1495a7;
-    }
-
-    .research-topic {
-      margin-top: 32px;
-      padding-top: 30px;
-      border-top: 1px solid #e6ebf1;
-      scroll-margin-top: 110px;
-    }
-
-    .research-topic h2 {
-      margin-bottom: 12px;
-      font-size: 32px;
-      line-height: 1.25;
-    }
-
-    .research-topic__desc {
-      margin-bottom: 16px;
-      color: #5a6072;
-      line-height: 1.75;
-    }
-
-    .research-paper-list {
-      margin: 0 0 0 22px;
-      padding: 0;
-    }
-
-    .research-paper-list li {
-      margin-bottom: 12px;
-      line-height: 1.7;
-    }
-
-    @media only screen and (max-width: 1024px) {
-      .research-page.page {
-        margin-top: 40px;
-      }
-
-      .research-topic h2 {
-        font-size: 28px;
-      }
-    }
-
-    @media only screen and (max-width: 576px) {
-      .research-topic h2 {
-        font-size: 24px;
-      }
-
-      .research-topics-nav a {
-        font-size: 13px;
-      }
-    }
-  </style>
 </head>
 
-<body>
+<body class="inner-page inner-page--research">
 
   <header class="c-header">
     <div class="container">
@@ -166,107 +80,48 @@
     <div class="container mt-5">
       <article class="page research-page">
         <div class="page__content">
-          
-          <h2 id="topics-2022-2026">Topics</h2>
-
-          <ul class="research-topics-nav list-reset">
-            <li><a href="#topic-1">LLM Routing and Aggregation</a></li>
-            <li><a href="#topic-2">LLM-based Agent</a></li>
-            <li><a href="#topic-3">LLM-based MAS</a></li>
-            <li><a href="#topic-4">LLM Reasoning and Reinforcement Learning</a></li>
-            <li><a href="#topic-5">Multi-Agent Learning in Games</a></li>
-            <li><a href="#topic-6">Cooperation in Social Dilemmas</a></li>
-            <li><a href="#topic-7">LLM Meets Psychology</a></li>
-          </ul>
-
-          <section class="research-topic" id="topic-1">
-            <h2>LLM Routing and Aggregation</h2>
-            <p class="research-topic__desc">Leveraging multiple LLMs to improve collective performance and efficiency.</p>
-            <ol class="research-paper-list">
-              <li>
-                Beyond Gemini-3-Pro: Revisiting LLM Routing and Aggregation at Scale <a href="https://arxiv.org/abs/2601.01330" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing <a href="https://arxiv.org/abs/2601.07206" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Beyond GPT-5: Making LLMs Cheaper and Better via Performance-Efficiency Optimized Routing <a href="https://dl.acm.org/doi/abs/10.1145/3772429.3772445" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                ICL-Router: In-Context Learned Model Representations for LLM Routing <a href="https://arxiv.org/abs/2510.09719" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scales Test-Time Compute <a href="https://arxiv.org/abs/2504.00762" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                The Avengers: A Simple Recipe for Uniting Smaller Language Models to Challenge Proprietary Giants <a href="https://arxiv.org/abs/2505.19797" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Open-Source LLMs Collaboration Beats Closed-Source LLMs: A Scalable Multi-Agent System <a href="https://arxiv.org/abs/2507.14200" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Learning Compact Representations of LLM Abilities via Item Response Theory <a href="https://arxiv.org/abs/2510.00844" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Decouple and Orthogonalize: A Data-Free Framework for LoRA Merging <a href="https://arxiv.org/abs/2505.15875" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Nature-Inspired Population-Based Evolution of Large Language Models <a href="https://arxiv.org/abs/2503.01155" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                A Comprehensive Survey of LLM-Driven Collective Intelligence: Past, Present, and Future <a href="https://www.researchgate.net/publication/395091975_A_Comprehensive_Survey_of_LLM-Driven_Collective_Intelligence_Past_Present_and_Future" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-            </ol>
+          <section class="research-topic research-topic--routing" id="llm-routing">
+            <div class="research-topic__number">01</div>
+            <div class="research-topic__main">
+              <p class="research-topic__label">efficiency · cost-aware · collective intelligence</p>
+              <h2>LLM Routing</h2>
+              <p class="research-topic__desc">I study how language-model systems can choose the right model or group of models for each task, balancing performance, efficiency, and cost.</p>
+              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
+                <li>LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing <a href="https://arxiv.org/abs/2601.07206" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>Beyond GPT-5: Making LLMs Cheaper and Better via Performance-Efficiency Optimized Routing (<strong>DAI 2025 Best Paper Award</strong>) <a href="https://dl.acm.org/doi/abs/10.1145/3772429.3772445" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:geHnlv5EZngC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>The Avengers: A Routing Recipe for Collective Intelligence in Language Models <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:K3LRdlH-MEoC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>ICL-Router: In-Context Learned Model Representations for LLM Routing <a href="https://arxiv.org/abs/2510.09719" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+              </ul></div>
+            </div>
           </section>
 
-          <section class="research-topic" id="topic-2">
-            <h2>LLM-based Agent</h2>
-            <p class="research-topic__desc">Agent architectures, memory systems, workflow generation, and long-horizon task execution for LLM-based agents.</p>
-            <ol class="research-paper-list">
-              <li>
-                Single-Agent Scaling Fails Multi-Agent Intelligence: Towards Foundation Models with Native Multi-Agent Intelligence <a href="https://arxiv.org/abs/2512.08743" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                If Multi-Agent Debate is the Answer, What is the Question? <a href="https://arxiv.org/abs/2502.08788" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                MemVerse: Multimodal Memory for Lifelong Learning Agents <a href="https://arxiv.org/abs/2512.03627" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                EvoFlow: Evolving Diverse Agentic Workflows On The Fly <a href="https://arxiv.org/abs/2502.07373" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                PerPilot: Personalizing VLM-based Mobile Agents via Memory and Exploration <a href="https://arxiv.org/abs/2508.18040" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Organizing, Orchestrating, and Benchmarking Agent Skills at Ecosystem Scale <a href="https://arxiv.org/abs/2603.02176" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                InternAgent-1.5: A Unified Agentic Framework for Long-Horizon Autonomous Scientific Discovery <a href="https://arxiv.org/abs/2602.08990" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Hands-on LLM-based Agents: A Tutorial for General Audiences <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5747025" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-            </ol>
+          <section class="research-topic research-topic--societies" id="agent-societies">
+            <div class="research-topic__number">02</div>
+            <div class="research-topic__main">
+              <p class="research-topic__label">social norms · cooperation · coordination</p>
+              <h2>Agent Societies</h2>
+              <p class="research-topic__desc">I explore how agent communities coordinate, cooperate, and form social norms, particularly when they may have conflicts of interest.</p>
+              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
+                <li>Beyond the Tragedy of the Commons: Building A Reputation System for Generative Multi-agent Systems (<strong>AAMAS 2026 Best Student Paper Nominee</strong>) <a href="https://arxiv.org/abs/2505.05029" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>Emergence of Social Norms in Generative Agent Societies: Principles and Architecture <a href="https://arxiv.org/abs/2403.08251" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>LLM agents overcome the machine penalty when acting fairly but not when acting selfishly or altruistically <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:tS2w5q8j5-wC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>CraftUtopia: A LLM-based Multi-Agent System for Collaborative Construction in Minecraft (<strong>AAMAS 2026 Best System Demo Award</strong>) <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:5Ul4iDaHHb8C" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+              </ul></div>
+            </div>
           </section>
 
-          <section class="research-topic" id="topic-3">
-            <h2>LLM-based MAS</h2>
-            <p class="research-topic__desc">Multi-agent mechanisms built with LLM-based agents, focusing on norms, reputation, and social interaction.</p>
-            <ol class="research-paper-list">
-              <li>
-                Beyond the Tragedy of the Commons: Building A Reputation System for Generative Multi-agent Systems <a href="https://arxiv.org/abs/2505.05029" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Emergence of Social Norms in Generative Agent Societies: Principles and Architecture <a href="https://arxiv.org/abs/2403.08251" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                OASIS: Open Agent Social Interaction Simulations with One Million Agents <a href="https://arxiv.org/abs/2411.11581" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                An AI Researchers&#x27; Perspective: At the Crossroad of LLMs, Agent-Based Modeling, and Complex Systems <a href="https://doi.org/10.1016/j.plrev.2025.03.015" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-            </ol>
+          <section class="research-topic research-topic--harness" id="agent-harness">
+            <div class="research-topic__number">03</div>
+            <div class="research-topic__main">
+              <p class="research-topic__label">self-improving · agent skills · autonomy · long-horizon</p>
+              <h2>Agent Harness</h2>
+              <p class="research-topic__desc">I work on the infrastructure around agents: harnesses that organize skills, support autonomous long-horizon behavior, benchmark tool use, and eventually improve themselves.</p>
+              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
+                <li>Self-Harness: Harnesses That Improve Themselves <a href="https://arxiv.org/abs/2606.09498" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+                <li>Organizing, orchestrating, and benchmarking agent skills at ecosystem scale <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:Tiz5es2fbqcC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
+              </ul></div>
+            </div>
           </section>
 
           <section class="research-topic" id="topic-4">
@@ -433,8 +288,7 @@
     </div>
   </footer>
 
-  <script src="js/scripts.js"></script>
-  <script src="js/common.js"></script>
+  <script src="assets/inner-pages.js?v=5"></script>
 </body>
 
 </html>

@@ -1,558 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
-    <!--告诉IE浏览器使用最新的渲染模式。-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--设置网页的视口属性,用于响应式设计,确保页面能适配不同屏幕大小。-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>shuyue hu</title>
-    <!--<meta name='description' content='Machine Learning and Data Science'>-->
-
-    <link rel="canonical" href="http://localhost:6060/">
-    <!-- 引入Bootstrap CSS -->
-    <link rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- 引入Bootstrap JS 和依赖的Popper.js
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-   -->
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="shuyuehu">
-    <meta name="twitter:description"
-      content="Machine Learning and Data Science">
-    <meta name="twitter:image:src" content>
-
-    <!-- Facebook OpenGraph -->
-    <meta property="og:title" content="shuyuehu">
-    <meta property="og:description" content="Machine Learning and Data Science">
-    <meta property="og:image" content>
-
-    <!-- Fonts 从CDN引入Ionicons图标库的样式表，可以在页面中使用这个图标库提供的图标 -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
-      rel="stylesheet">
-
-    <!-- Ionicons -->
-    <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"
-      rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/main.css">
+    <meta name="theme-color" content="#f48cae">
+    <meta name="description" content="Shuyue Hu — researcher, mother, and proud keeper of a two-year-old croissant named Kexong.">
+    <title>Shuyue Hu — researcher &amp; mama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/croissant-home.css">
   </head>
-
   <body>
-
-    <!-- begin header -->
-    <header class="c-header">
-      <div class="container">
-        <div class="row">
-          <div class="c-header__inner">
-
-            <nav class="main-nav">
-              <div class="main-nav__box">
-
-                <div class="nav__icon-close">
-                  <i class="ion ion-md-close"></i>
-                </div>
-
-                <div class="nav__title">Menu</div>
-
-                <ul class="nav__list list-reset">
-
-                  <!-- Home 页面，被标记为当前活跃 -->
-                  <li class="nav__item">
-                    <a href="index.html" class="nav__link active">Home</a>
-                  </li>
-
-                  <!-- Research 页面 -->
-                  <li class="nav__item">
-                    <a href="Biography.html" class="nav__link">Biography</a>
-                  </li>
-
-                  <!-- Biography 页面 -->
-                  <li class="nav__item">
-                  <a href="research.html" class="nav__link">Research</a>
-                  </li>
-
-                  <!-- Contact 页面 -->
-                  <li class="nav__item">
-                    <a href="contact.html" class="nav__link">Contact</a>
-                  </li>
-
-                  <!-- Agent Tutorial 页面 -->
-                  <li class="nav__item">
-                    <a href="https://llm-agent-tutorial.github.io/website/" class="nav__link" target="_blank" rel="noopener noreferrer">Agent Tutorial</a>
-                  </li>
-
-                </ul>
-              </div>
-
-              <!--bookshop-live name(social-link.jekyll.html) params() context() -->
-              <!--bookshop-live end-->
-            </nav>
-
-            <div class="nav-button">
-              <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
-            </div>
-
-          </div>
+    <div class="site-shell">
+      <header class="site-header" aria-label="Site header">
+        <a class="wordmark" href="index.html" aria-label="Shuyue Hu home">
+          <span class="wordmark__mark">SH</span>
+          <span class="wordmark__text">shuyue hu<span class="wordmark__dot">.</span></span>
+        </a>
+        <div class="header__side">
+          <span class="header__status"><span class="status-dot"></span> currently in shanghai</span>
+          <nav class="site-nav" aria-label="Primary navigation">
+            <a class="is-active" href="index.html">Home</a>
+            <a href="Biography.html">Biography</a>
+            <a href="research.html">Research</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://llm-agent-tutorial.github.io/website/" target="_blank" rel="noopener noreferrer">Agent Tutorial <span aria-hidden="true">↗</span></a>
+          </nav>
         </div>
-      </div>
-    </header>
-    <!-- end header -->
+      </header>
 
-    <style>
-    hero {
-      margin: 96px 0
-    }
-
-    @media only screen and (max-width: 1024px) {
-      .hero {
-        margin: 40px 0
-      }
-    }
-
-    .hero__inner .hero__title {
-      margin-bottom: 32px;
-      font-size: 68px;
-      line-height: 1.2;
-      color: var(--heading-font-color)
-    }
-
-    @media only screen and (max-width: 1140px) {
-      .hero__inner .hero__title {
-        font-size: 60px
-      }
-    }
-
-    @media only screen and (max-width: 1024px) {
-      .hero__inner .hero__title {
-        font-size: 50px
-      }
-    }
-
-    @media only screen and (max-width: 768px) {
-      .hero__inner .hero__title {
-        margin-bottom: 24px;
-        font-size: 40px
-      }
-    }
-
-    @media only screen and (max-width: 576px) {
-      .hero__inner .hero__title {
-        font-size: 32px
-      }
-    }
-
-    .hero__inner .hero__description {
-      margin-bottom: 0;
-      font-size: 24px;
-      color: var(--text-alt-color)
-    }
-
-    @media only screen and (max-width: 1024px) {
-      .hero__inner .hero__description {
-        font-size: inherit
-      }
-    }
-  </style>
-
-    <!-- 
-        Bookshop components are accessed using the bookshop tag, 
-        using the same syntax as the standard Jekyll include tag.
-    -->
-    <!--bookshop-live name(page.jekyll.html) params(content_blocks=page.content_blocks page_theme=page.page_theme) context() -->
-
-    <div class="c-page">
-
-      <!--bookshop-live name(hero/hero.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
-      <!-- begin hero -->
-
-      <section class="c-hero animate">
-        <div class="container">
-
-          <!-- <div>
-          <img class="corner-image" src="images/me.jpg" width="300" height="400" align ="left">  
-            <h1 class="c-hero__title">Hello! I'm xxxxx</h1>
-            <div class="c-hero__description"><p style="margin-left: 400px;">Welcome to my page! I am 
-            a research scientist at <a href="https://www.shlab.org.cn/" style="text-decoration: underline;">Shanghai Artificial Intelligence Laboratory<a>(the National AI Lab), Shanghai, China. 
-            Previously, I was a postdoctoral research fellow working with Prof. <a href="https://people.sutd.edu.sg/~georgios/" style="text-decoration: underline;">Georgios Piliouras</a> and 
-            Prof.<a href="https://xxx.com/" style="text-decoration: underline;">xxx</a> at <a href="https://www.sutd.edu.sg/" style="text-decoration: underline;"> Singapore University of Technology and Design</a> and
-            <a href="http://nus.edu.sg/>" style="text-decoration: underline;">National University of Singapore</a> , respectively. 
-            I completed my Ph.D at the <a href="http://www.cuhk.edu.hk/english/index.html" style="text-decoration: underline;">Chinese University of Hong Kong</a> under the supervison of 
-            Prof.<a href="http://www.cse.cuhk.edu.hk/~lhf/" style="text-decoration: underline;"> Ho-fung Leung </a> in 2019.
-            <br/><p>My research interests are 
-            in multi-agent system, game theory, reinforcement learning, and large language model.</p>
-            </div> 
-          <div/> -->
-          <div class="row">
-            <div class="col col-12 col-d-12">
-              <div class="hero__inner">
-                <img src="images/shuyuehu.png" alt="shuyuehu's Picture"
-                  style="margin:0 25px 0 0;float:left;width:320px;height:auto;">
-                <h1 class="hero__title">Hello, I'm Shuyue.</h1>
-                <div
-                  style="font-family:Helvetica Neue, Helvetica, Arial, sans-serif;font-size: 22px;"
-                  class="hero__description">
-                  I'm a researcher at <a href="https://www.shlab.org.cn/"
-                    style="text-decoration: underline;">Shanghai Artificial
-                    Intelligence Laboratory</a> in Shanghai, China. My research
-                  interests include, but are not limited to, multi-agent
-                  systems, large language models, and game theory.
-                  <br><br>
-                  Currently, my focus is on the intersection of large language
-                  models and multi-agent systems. Specifically, I am interested
-                  in: (i) improving the performance of LLMs by applying
-                  theories, principles, and methodologies from multi-agent
-                  systems, and (ii) using LLMs to address the open challenges
-                  within multi-agent systems.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div style="font-size: small;">Image: Christine Daniloff, MIT</div> -->
-      </section>
-
-      <!-- end hero -->
-      <!--bookshop-live end-->
-
-      <!--bookshop-live name(blog-section/blog-section.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
-      <!-- begin blog -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col col-12">
-            <h2>What's new:</h2>
-            <ul>
-              <div class="wrap" style="margin-top: 10px;">
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    March 2026</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    We released the world's first scientific-research Moltbook project,
-                    <a href="https://agentpanel.cc" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">AgentPanel</a>.
-                  </p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    November 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "Beyond gpt-5: Making llms cheaper and better via performance-efficiency optimized routing"
-                    won DAI's Best Paper Award!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    November 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our papers
-                    "Adaptive Theory of Mind for LLM-based Multi-Agent Coordination", "ICL-Router: In-Context Learned Model Representations for LLM Routing", "Do We Truly Need So Many Samples? Multi-LLM Repeated Sampling Efficiently Scales Test-Time Compute"
-                    and "The Avengers: A Routing Recipe for Collective Intelligence in Language Models"
-                    were accepted to AAAI 2026!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    September 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "Beyond gpt-5: Making llms cheaper and better via performance-efficiency optimized routing"
-                    was accepted to DAI 2025!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    September 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our papers
-                    "Rema: Learning to meta-think for llms with multi-agent reinforcement learning" and "Scaling physical reasoning with the physics dataset"
-                    were accepted to NuerIPS 2025!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    June 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "A formal model for multiagent Q-learning on graphs"
-                    was accepted to Science China Information Science 2025!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    May 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "Regret minimization in population network games: vanishing heterogeneity and convergence to equilibria"
-                    was accepted to IEEE Transactions on Neural Networks and Learning Systems 2025!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    April 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "Understanding When and Why Graph Attention Mechanisms Work via Node Classification"
-                    was accepted to ICML 2025!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    January 2025</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our paper
-                    "Payoff Control in Multichannel Games: Influencing Opponent Learning Evolution"
-                    was accepted to IEEE Transactions on Cybernetics!</p>
-                </div>
-                
-
-              </div>
-            </ul>
-            <a href="#" onclick="toggleNews(); return false;">Click Here for
-              More News ...</a>
-            <div id="news" style="display: none; margin-top: 20px;">
-              <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    October 2024</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">
-                    Our
-                    paper "Beyond a Binary Theorizing of Prosociality" was
-                    accepted to PNAS!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    May 2024</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
-                    paper
-                    "Emergence of Social Norms in Generative Agent Societies: Principles and Architecture"
-                    was
-                    accepted to the HAI track (acceptance rate: 4%) of IJCAI
-                    2024!</p>
-                </div>
-                <div
-                  style="display: flex; align-items: center; margin-top: 20px;">
-                  <p
-                    style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                    May 2024</p>
-                  <p
-                    style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
-                    paper
-                    "Configurable Mirror Descent: Towards a Unification of Decision Making"
-                    was accepted to ICML
-                    2024!</p>
-                </div>
-              <div
-                style="display: flex; align-items: center; margin-top: 20px;">
-                <p
-                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                  April 2024</p>
-                <p
-                  style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
-                  paper
-                  "A Successful Strategy for Multichannel Iterated Prisoner's Dilemma"
-                  was accepted to IJCAI 2024!
-                </p>
-              </div>
-              <div
-                style="display: flex; align-items: center; margin-top: 20px;">
-                <p
-                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                  December 2023</p>
-                <p
-                  style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
-                  paper
-                  "The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games"
-                  was accepted to AAMAS
-                  2024!</p>
-              </div>
-              <div style="display: flex; align-items: center;">
-                <p
-                  style="margin: 0; padding: 0; width: 120px; color: #abb7b7; font-size: 15px; font-weight: 700; padding-right: 10px; text-align: right;">
-                  September 2023</p>
-                <p
-                  style="margin: 0; padding: 0; width: 100%; border-left: 2px solid #f4f5f6; padding-left: 10px;">Our
-                  paper "The Best of Both Worlds in Network Population Games:
-                  Reaching Consensus and Convergence to
-                  Equilibrium" was accepted to NeurIPS 2023!</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="birthday-banner">
+        <button class="birthday-banner__clicker" id="croissant-clicker" type="button" aria-label="Make more croissants rain. Current score: 0 croissants. One croissant per tap.">
+          <span aria-hidden="true">🥐</span>
+          <span class="birthday-banner__copy">
+            <strong>Why the croissant rain?</strong>
+            <small>My daughter is named Kexong — her name means “croissant” in Chinese. She just turned two!</small>
+          </span>
+          <span class="birthday-banner__game" aria-hidden="true">
+            <span class="birthday-banner__hud">
+              <span class="birthday-banner__level" id="rain-level">Drizzle</span>
+              <span class="birthday-banner__score"><b id="croissant-count">0</b><small> / 500</small> 🥐</span>
+              <span class="birthday-banner__rate" id="croissant-rate">+1 / tap</span>
+            </span>
+            <span class="birthday-banner__hint">Tap for more</span>
+          </span>
+        </button>
+        <button class="rain-toggle" id="rain-toggle" type="button" aria-label="Clear croissant rain and reset the score.">Clear rain</button>
       </div>
 
-      <!-- begin contact -->
+      <main>
+        <section class="hero" id="top" aria-labelledby="hero-title">
+          <div class="hero__sky" aria-hidden="true"></div>
+          <div class="pastry-rain" aria-hidden="true">
+            <span class="pastry pastry--1">🥐</span>
+            <span class="pastry pastry--2">🥐</span>
+            <span class="pastry pastry--3">🥐</span>
+            <span class="pastry pastry--4">🥐</span>
+            <span class="pastry pastry--5">🥐</span>
+            <span class="pastry pastry--6">🥐</span>
+            <span class="pastry pastry--7">🥐</span>
+            <span class="pastry pastry--8">🥐</span>
+            <span class="pastry pastry--9">🥐</span>
+            <span class="pastry pastry--10">🥐</span>
+            <span class="pastry pastry--11">🥐</span>
+            <span class="pastry pastry--12">🥐</span>
+          </div>
 
-      <div class="c-contact-form" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="col col-12">
-              <div class="post__share">
-                <div class="share__head">
-                </div>
-                <!-- <ul class="share__list list-reset">
-    <li class="share__item">
-      <a class="share__link"
-        href="https://sites.google.com/view/shuyue-hu"
-        target="_blank"><img src="assets/Google_Scholar_logo.svg"></a>
-    </li>
-    <li class="share__item">
-      <a class="share__link"
-        href="https://github.com/xxxx"
-        target="_blank"><img src="assets/github.svg"></a>
-    </li>
-    <li class="share__item">
-      <a class="share__link"
-        href="https://twitter.com/xxxx"
-        target="_blank"><img src="assets/Logo_of_Twitter.svg"></a>
-    </li>
-    <li class="share__item">
-      <a class="share__link"
-        href="https://facebook.com/xxxx"
-        target="_blank"><img src="assets/2021_Facebook_icon.svg"></a>
-    </li>
-    
-  </ul> -->
+          <div class="hero__inner page-width">
+            <div class="hero__copy reveal">
+              <p class="eyebrow"><span class="eyebrow__line"></span> researcher · mama</p>
+              <h1 id="hero-title">Hello, I’m<br><em>Shuyue Hu.</em></h1>
+              <p class="hero__lead">I’m a researcher at <a href="https://www.shlab.org.cn/" target="_blank" rel="noopener noreferrer">Shanghai Artificial Intelligence Laboratory</a> and a PhD advisor at Shanghai Jiao Tong University and Fudan University. My research interests are broadly in agents, multi-agent systems, large language models, and game theory.</p>
+              <div class="hero__actions">
+                <a class="button button--dark" href="Biography.html">A little more about me <span aria-hidden="true">↗</span></a>
+                <a class="button button--quiet" href="research.html">See the research <span aria-hidden="true">↗</span></a>
               </div>
+            </div>
 
+            <div class="portrait-stage reveal reveal--delay" aria-label="A portrait of Shuyue Hu">
+              <div class="portrait-stage__sun"></div>
+              <div class="portrait-stage__scribble" aria-hidden="true">hello<br>world</div>
+              <figure class="portrait-frame">
+                <img src="images/shuyuehu.png" alt="Shuyue Hu smiling on a beach">
+                <figcaption><span>SHUYUE HU</span><span>SINGAPORE · 2022</span></figcaption>
+              </figure>
+              <button class="portrait-note portrait-note--bottom collaborator-trigger" id="collaborator-trigger" type="button" aria-expanded="false" aria-controls="kexong-preview" aria-label="Show a photo of Kexong">
+                <span>+1</span> tiny collaborator
+                <span class="collaborator-preview" id="kexong-preview">
+                  <img src="images/hu_baby_girl.jpg" alt="Kexong smiling behind a birthday present">
+                  <span>Kexong / age 2</span>
+                </span>
+              </button>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- end contact -->
-      <!--bookshop-live end-->
 
+          <div class="scroll-cue" aria-hidden="true"><span></span> scroll to the good part</div>
+        </section>
+
+        <section class="research-intro page-width" id="research-notes" aria-labelledby="research-title">
+          <div class="section-heading reveal">
+            <p class="eyebrow"><span class="eyebrow__line"></span> current research interests</p>
+            <h2 id="research-title">What I’m<br><em>exploring now.</em></h2>
+            <a class="text-link" href="research.html">Browse all research <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="topic-grid">
+            <article class="topic-card topic-card--peach reveal">
+              <span class="topic-card__index">01 / 03</span>
+              <span class="topic-card__icon" aria-hidden="true">↗</span>
+              <h3>LLM<br>Routing</h3>
+              <p>Choosing the right model or group of models for each task, balancing performance, efficiency, and cost.</p>
+              <a href="research.html#llm-routing" aria-label="Read about LLM routing">Explore topic <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="topic-card topic-card--butter reveal reveal--delay">
+              <span class="topic-card__index">02 / 03</span>
+              <span class="topic-card__icon" aria-hidden="true">✳</span>
+              <h3>Agent<br>Societies</h3>
+              <p>How agent communities coordinate, cooperate, and form norms when interests may conflict.</p>
+              <a href="research.html#agent-societies" aria-label="Read about agent societies">Explore topic <span aria-hidden="true">→</span></a>
+            </article>
+            <article class="topic-card topic-card--lilac reveal reveal--delay-2">
+              <span class="topic-card__index">03 / 03</span>
+              <span class="topic-card__icon" aria-hidden="true">⌁</span>
+              <h3>Agent<br>Harness</h3>
+              <p>Building scaffolds that organize skills, support autonomy, benchmark tool use, and improve over time.</p>
+              <a href="research.html#agent-harness" aria-label="Read about agent harness">Explore topic <span aria-hidden="true">→</span></a>
+            </article>
+          </div>
+        </section>
+
+        <section class="updates page-width" id="updates" aria-labelledby="updates-title" hidden>
+          <div class="updates__rail reveal">
+            <p class="eyebrow eyebrow--coral"><span class="eyebrow__line"></span> field notes</p>
+            <h2 id="updates-title">What’s new<span class="title-dot">?</span></h2>
+          </div>
+          <div class="updates__list">
+            <article class="update-item reveal"><time datetime="2026-03">MAR <b>2026</b></time><div><h3>AgentPanel is out in the wild</h3><p>We released the world’s first scientific-research Moltbook project. <a href="https://agentpanel.cc" target="_blank" rel="noopener noreferrer">Visit AgentPanel ↗</a></p></div></article>
+            <article class="update-item reveal reveal--delay"><time datetime="2025-11">NOV <b>2025</b></time><div><h3>Beyond GPT-5 wins DAI’s Best Paper Award</h3><p>Performance-efficiency optimized routing makes LLMs cheaper and better.</p></div></article>
+            <article class="update-item reveal reveal--delay-2"><time datetime="2024-05">MAY <b>2024</b></time><div><h3>A new collaborator joined the family</h3><p>Now two years into the most joyful long-horizon experiment of all.</p></div></article>
+          </div>
+        </section>
+
+        <section class="contact-band page-width reveal" aria-labelledby="contact-title">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span> say hello</p>
+            <h2 id="contact-title">Let’s compare<br><em>notes.</em></h2>
+          </div>
+          <div class="contact-band__copy">
+            <p>I’m happy to talk about LLM routing, agent societies, agent harnesses, or thoughtful ways to build systems that work with people.</p>
+            <a class="button button--dark" href="mailto:shuyuehu217@gmail.com">shuyuehu217@gmail.com <span aria-hidden="true">↗</span></a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer page-width">
+        <a class="wordmark" href="#top" aria-label="Back to top"><span class="wordmark__mark">SH</span><span class="wordmark__text">shuyue hu<span class="wordmark__dot">.</span></span></a>
+        <p>Made with research, snacks &amp; a two-year-old named Kexong.</p>
+        <a href="#top" class="footer-top">Back to top ↑</a>
+      </footer>
     </div>
 
-    <!--bookshop-live end-->
-
-    <div class="top" title="Top"><i class="ion ion-ios-arrow-up"></i></div>
-
-    <!-- begin footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col col-12">
-            <ul class="footer_nav list-reset">
-
-              <li class="footer_nav__item">
-                <a href="index.html" class="footer_nav__link">Home</a>
-              </li>
-
-              <li class="footer_nav__item">
-                <a href="Biography.html" class="footer_nav__link">Biography</a>
-              </li>
-
-              <li class="footer_nav__item">
-                <a href="research.html" class="footer_nav__link">Research</a>
-              </li>
-
-              <li class="footer_nav__item">
-                <a href="contact.html" class="footer_nav__link">Contact</a>
-              </li>
-
-              <li class="footer_nav__item">
-                <a href="https://llm-agent-tutorial.github.io/website/" class="footer_nav__link" target="_blank" rel="noopener noreferrer">Agent Tutorial</a>
-              </li>
-            </ul>
-            <div class="copyright">
-              <p> 2024 &copy; <a href="index.html">shuyue-hu.</a> Theme <a
-                  href="https://github.com/CloudCannon/vonge-jekyll-bookshop-template">Vonge</a>.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- end footer -->
     <script>
-    function toggleNews() {
-      var newsDiv = document.getElementById('news');
-      if (newsDiv.style.display === 'none') {
-        newsDiv.style.display = 'block';
-      } else {
-        newsDiv.style.display = 'none';
+      const clicker = document.getElementById('croissant-clicker');
+      const countDisplay = document.getElementById('croissant-count');
+      const levelDisplay = document.getElementById('rain-level');
+      const rateDisplay = document.getElementById('croissant-rate');
+      const rainToggle = document.getElementById('rain-toggle');
+      const hero = document.querySelector('.hero');
+      const collaboratorTrigger = document.getElementById('collaborator-trigger');
+      const maxCroissants = 500;
+      let croissantCount = 0;
+
+      const rainLevels = [
+        { threshold: 0, name: 'Drizzle', perTap: 1 },
+        { threshold: 5, name: 'Shower', perTap: 2 },
+        { threshold: 15, name: 'Downpour', perTap: 3 },
+        { threshold: 40, name: 'Storm', perTap: 5 },
+        { threshold: 80, name: 'Pastry chaos', perTap: 8 },
+        { threshold: maxCroissants, name: 'Max rain', perTap: 8 }
+      ];
+
+      function getRainLevel(score) {
+        return rainLevels.reduce((active, level) => score >= level.threshold ? level : active, rainLevels[0]);
       }
-    }
-  </script>
 
-    <script src="js/scripts.js"></script>
-    <script src="js/common.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-    $(document).ready(function () {
-      $('.filter-tag').click(function (e) {
-        e.preventDefault();
+      function dropCroissants(amount) {
+        const shower = document.createDocumentFragment();
+        const fallDistance = hero.offsetHeight + 140;
 
-        // remove active class from all tags
-        $('.filter-tag').removeClass('active');
-
-        // add active class to the clicked tag
-        $(this).addClass('active');
-
-        // get the tag from the clicked link
-        var filterTag = $(this).data('tag');
-
-        if (filterTag === "All") {
-          // If "All" tag is clicked, show all posts
-          $('.c-blog-card').show();
-          return;  // exit from the function
+        for (let index = 0; index < amount; index += 1) {
+          const pastry = document.createElement('span');
+          const duration = 2.8 + Math.random() * 1.8;
+          pastry.className = 'game-pastry';
+          pastry.textContent = '🥐';
+          pastry.style.setProperty('--x', `${3 + Math.random() * 92}%`);
+          pastry.style.setProperty('--delay', `${Math.random() * 0.28}s`);
+          pastry.style.setProperty('--duration', `${duration}s`);
+          pastry.style.setProperty('--drift', `${-55 + Math.random() * 110}px`);
+          pastry.style.setProperty('--fall-distance', `${fallDistance}px`);
+          pastry.style.setProperty('--size', `${24 + Math.random() * 18}px`);
+          pastry.addEventListener('animationend', () => pastry.remove(), { once: true });
+          shower.appendChild(pastry);
         }
 
-        // loop through each blog card
-        $('.c-blog-card').each(function () {
-          var hasTag = false;
+        hero.appendChild(shower);
+      }
 
-          // check if this card has the tag
-          $(this).find('.c-blog-card__tag').each(function () {
-            if ($(this).text().trim() === filterTag) {
-              hasTag = true;
-            }
-          });
+      function updateCroissantHud(level) {
+        countDisplay.textContent = croissantCount;
+        levelDisplay.textContent = level.name;
+        rateDisplay.textContent = croissantCount === maxCroissants ? 'MAX / TAP' : `+${level.perTap} / tap`;
+        clicker.setAttribute('aria-label', `Make more croissants rain. Current score: ${croissantCount} of ${maxCroissants} croissants. ${level.perTap} croissants per tap.`);
+      }
 
-          // show/hide the card based on whether it has the tag
-          if (hasTag) {
-            $(this).show();
-          } else {
-            $(this).hide();
-          }
-        });
+      function resetCroissantRain() {
+        croissantCount = 0;
+        hero.querySelectorAll('.game-pastry').forEach((pastry) => pastry.remove());
+        updateCroissantHud(rainLevels[0]);
+        clicker.classList.remove('is-popping');
+      }
+
+      function collectCroissants() {
+        const currentLevel = getRainLevel(croissantCount);
+        const previousCount = croissantCount;
+        croissantCount = Math.min(maxCroissants, croissantCount + currentLevel.perTap);
+        const nextLevel = getRainLevel(croissantCount);
+        const earned = croissantCount - previousCount;
+
+        dropCroissants(earned || currentLevel.perTap);
+        updateCroissantHud(nextLevel);
+        clicker.classList.remove('is-popping');
+        void clicker.offsetWidth;
+        clicker.classList.add('is-popping');
+      }
+
+      clicker.addEventListener('click', collectCroissants);
+      rainToggle.addEventListener('click', resetCroissantRain);
+
+      function setCollaboratorOpen(isOpen) {
+        collaboratorTrigger.classList.toggle('is-open', isOpen);
+        collaboratorTrigger.setAttribute('aria-expanded', String(isOpen));
+      }
+
+      collaboratorTrigger.addEventListener('click', () => {
+        setCollaboratorOpen(!collaboratorTrigger.classList.contains('is-open'));
       });
-    });
 
-  </script>
+      if (window.location.hash === '#collaborator-trigger') setCollaboratorOpen(true);
+    </script>
   </body>
-
 </html>

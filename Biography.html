@@ -39,9 +39,11 @@
   <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/main.css">
+  <link rel="stylesheet" href="assets/croissant-home.css">
+  <link rel="stylesheet" href="assets/inner-pages.css?v=5">
 </head>
 
-<body>
+<body class="inner-page inner-page--biography">
 
 
 
@@ -187,18 +189,18 @@
           <div class="page__content">
             <!-- <p>Link: <a href="./assets/CV (4).pdf">CV</a></p> -->
 
-            <!-- <h2 id="brief-biography">Brief Biography</h2> -->
-            <p>Shuyue Hu joined Shanghai Artificial Intelligence Lab in May 2022. Prior to this, she received her
-              bachelor degree at South China University of Technology in 2015 and her doctoral degree at the Chinese
-              University of Hong Kong under the supervision of Prof. Ho-fung Leung in 2019. From 2020 to 2022, she was a
-              postdoctoral research fellow working with Prof. Harold Soh at National University of Singapore, and Prof.
-              Georgios Piliouras at Singapore University of Technology and Design. </p>
-            <p>Shuyue’s research focuses on multi-agent systems, game theory, and large language models. She has
-              actively contributed to the multi-agent systems community, including her recent role as an organizing
-              committee member of AAMAS’24. Additionally, she serves as a (senior) PC member of leading AI conferences
-              (such as NeurIPS, ICML, ICLR, and ECAI) and a guest editor of Neurocomputing. </p>
-            <p>In May 2024, Shuyue celebrated the arrival of a new addition to her family. Now, in her precious free
-              time, she enjoys training her own intelligent agent---her lovely newborn daughter! </p>
+            <section class="bio-language bio-language--english" aria-label="English biography">
+              <p><strong>Shuyue Hu</strong> joined Shanghai Artificial Intelligence Laboratory in May 2022. She received her <strong>B.Sc. from South China University of Technology in 2015</strong> and her <strong>Ph.D. from The Chinese University of Hong Kong in 2019</strong>, under the supervision of Prof. Ho-fung Leung. Prior to joining Shanghai AI Lab, she was a postdoctoral research fellow working with Prof. Harold Soh at the National University of Singapore and Prof. Georgios Piliouras at the Singapore University of Technology and Design.</p>
+              <p>Her research interests lie in <strong>multi-agent systems, game theory, and large language models</strong>. She has published <strong>over 60 papers</strong> in leading journals and conferences, including <strong>PNAS, National Science Review, Artificial Intelligence (AIJ), AAAI, IJCAI, NeurIPS, ICML, and AAMAS</strong>. Her research has received the <strong>First Prize of the Natural Science Award from the Chinese Institute of Electronics</strong>, the <strong>Best Paper Award at DAI 2025</strong>, a <strong>Best Student Paper Award nomination at AAMAS 2026</strong>, and the <strong>Best System Demonstration Award at AAMAS 2026</strong>.</p>
+              <p>Shuyue has been actively involved in the multi-agent systems and AI communities. She has served as an <strong>Area Chair, Organizing Committee member, and (Senior) Program Committee member</strong> for major AI conferences, and is a <strong>Guest Editor of JAAMAS and Neurocomputing</strong>.</p>
+              <p>Outside research, Shuyue enjoys spending time and learning together with her own tiny intelligent agent—her daughter, Kexong.</p>
+            </section>
+
+            <section class="bio-language bio-language--chinese" lang="zh-CN" aria-label="中文简介">
+              <p><strong>胡舒悦</strong>于2022年加入上海人工智能实验室。2015年本科毕业于华南理工大学，2019年博士毕业于香港中文大学，师从 Ho-fung Leung 教授。此后分别与新加坡国立大学 Harold Soh 教授及新加坡科技设计大学 Georgios Piliouras 教授开展博士后研究。</p>
+              <p>主要研究方向包括<strong>多智能体系统、博弈论与大语言模型</strong>。已在 PNAS、National Science Review、Artificial Intelligence (AIJ)、AAAI、IJCAI、NeurIPS、ICML、AAMAS 等国际知名期刊和会议发表论文60余篇。研究成果获<strong>中国电子学会自然科学奖一等奖、DAI 2025最佳论文奖、AAMAS 2026最佳学生论文奖提名及AAMAS 2026最佳系统演示奖</strong>。</p>
+              <p>长期参与多智能体系统及人工智能领域的学术服务，担任多个国际人工智能会议的领域主席及（高级）程序委员，参与国际会议组织工作，并担任 JAAMAS、Neurocomputing 客座编辑。入选<strong>上海市海外高层次人才计划</strong>。</p>
+            </section>
 
             <!-- <h3 id="selected-honors-and -awards">SELECTED HONORS AND AWARDS</h3>
 <ul>
@@ -309,8 +311,6 @@
       </footer>
       <!-- end footer -->
 
-      <script src="js/scripts.js"></script>
-      <script src="js/common.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script>
         $(document).ready(function () {
@@ -354,6 +354,7 @@
         });
 
       </script>
+  <script src="assets/inner-pages.js?v=5"></script>
 </body>
 
 </html>
