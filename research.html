@@ -86,13 +86,53 @@
               <p class="research-topic__label">efficiency · cost-aware · collective intelligence</p>
               <h2>LLM Routing</h2>
               <p class="research-topic__desc">I study how language-model systems can choose the right model or group of models for each task, balancing performance, efficiency, and cost.</p>
-              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
-                <li>LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing <a href="https://arxiv.org/abs/2601.07206" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>Beyond GPT-5: Making LLMs Cheaper and Better via Performance-Efficiency Optimized Routing (<strong>DAI 2025 Best Paper Award</strong>) <a href="https://dl.acm.org/doi/abs/10.1145/3772429.3772445" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:geHnlv5EZngC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>The Avengers: A Routing Recipe for Collective Intelligence in Language Models <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:K3LRdlH-MEoC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>ICL-Router: In-Context Learned Model Representations for LLM Routing <a href="https://arxiv.org/abs/2510.09719" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-              </ul></div>
+              <div class="research-topic__work"><h3>Selected work</h3><div class="research-work-list">
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/llmrouterbench.png" alt="Figure 1 from LLMRouterBench"></figure>
+                  <div class="research-work-card__body">
+                    <h4>LLMRouterBench: A Massive Benchmark and Unified Framework for LLM Routing</h4>
+                    <p>We build a 400K-instance routing benchmark over 21 datasets and 33 models, showing strong model complementarity but also that many routers still fail to beat simple baselines reliably.</p>
+                    <a href="https://arxiv.org/abs/2601.07206" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">ACL Findings 2026</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/beyond-gpt5.png" alt="Figure 1 from Beyond GPT-5"></figure>
+                  <div class="research-work-card__body">
+                    <h4>Beyond GPT-5: Making LLMs Cheaper and Better via Performance-Efficiency Optimized Routing</h4>
+                    <p>We introduce Avengers-Pro, a performance-efficiency router that can surpass GPT-5-medium by 7% average accuracy or match its accuracy at 27% lower cost.</p>
+                    <a href="https://dl.acm.org/doi/abs/10.1145/3772429.3772445" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__award"><strong>DAI 2025 Best Paper Award</strong></p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/mtrouter.png" alt="Figure 1 from MTRouter"></figure>
+                  <div class="research-work-card__body">
+                    <h4>MTRouter: Cost-Aware Multi-Turn LLM Routing with History-Model Joint Embeddings</h4>
+                    <p>We route each turn using history-model embeddings, improving ScienceWorld performance while cutting GPT-5 cost by 58.7% and reducing HLE cost by 43.4%.</p>
+                    <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:geHnlv5EZngC" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">ACL 2026</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/avengers.png" alt="Figure 1 from The Avengers"></figure>
+                  <div class="research-work-card__body">
+                    <h4>The Avengers: A Routing Recipe for Collective Intelligence in Language Models</h4>
+                    <p>We combine embedding, clustering, scoring, and voting so ten open-source 7B models collectively surpass GPT-4o, GPT-4.1, and GPT-4.5 on average across 15 datasets.</p>
+                    <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:K3LRdlH-MEoC" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">AAAI 2026</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/icl-router.png" alt="Figure 1 from ICL-Router"></figure>
+                  <div class="research-work-card__body">
+                    <h4>ICL-Router: In-Context Learned Model Representations for LLM Routing</h4>
+                    <p>We represent model capabilities with in-context vectors, reaching state-of-the-art routing on in-distribution and out-of-distribution tasks while adding new models without retraining.</p>
+                    <a href="https://arxiv.org/abs/2510.09719" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">AAAI 2026</p>
+                  </div>
+                </article>
+              </div></div>
             </div>
           </section>
 
@@ -102,12 +142,47 @@
               <p class="research-topic__label">social norms · cooperation · coordination</p>
               <h2>Agent Societies</h2>
               <p class="research-topic__desc">I explore how agent communities coordinate, cooperate, and form social norms, particularly when they may have conflicts of interest.</p>
-              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
-                <li>Beyond the Tragedy of the Commons: Building A Reputation System for Generative Multi-agent Systems (<strong>AAMAS 2026 Best Student Paper Nominee</strong>) <a href="https://arxiv.org/abs/2505.05029" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>Emergence of Social Norms in Generative Agent Societies: Principles and Architecture <a href="https://arxiv.org/abs/2403.08251" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>LLM agents overcome the machine penalty when acting fairly but not when acting selfishly or altruistically <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:tS2w5q8j5-wC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>CraftUtopia: A LLM-based Multi-Agent System for Collaborative Construction in Minecraft (<strong>AAMAS 2026 Best System Demo Award</strong>) <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:5Ul4iDaHHb8C" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-              </ul></div>
+              <div class="research-topic__work"><h3>Selected work</h3><div class="research-work-list">
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/tragedy-commons.png" alt="Figure 1 from Beyond the Tragedy of the Commons"></figure>
+                  <div class="research-work-card__body">
+                    <h4>Beyond the Tragedy of the Commons: Building A Reputation System for Generative Multi-agent Systems</h4>
+                    <p>We propose RepuNet, a dual-level reputation framework that prevents cooperation collapse and produces cooperative clusters, social isolation of exploiters, and positive gossip dynamics.</p>
+                    <a href="https://arxiv.org/abs/2505.05029" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__award"><strong>AAMAS 2026 Best Student Paper Nominee</strong></p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/social-norms.png" alt="Figure 1 from Emergence of Social Norms"></figure>
+                  <div class="research-work-card__body">
+                    <h4>Emergence of Social Norms in Generative Agent Societies: Principles and Architecture</h4>
+                    <p>We design CRSEC to create, spread, evaluate, and enforce norms in generative agent societies, reducing social conflicts in Smallville-style simulations with supporting human evaluation.</p>
+                    <a href="https://arxiv.org/abs/2403.08251" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">IJCAI 2024</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/machine-penalty.png" alt="Figure 1 from machine penalty study"></figure>
+                  <div class="research-work-card__body">
+                    <h4>LLM agents overcome the machine penalty when acting fairly but not when acting selfishly or altruistically</h4>
+                    <p>In a pre-registered experiment with 1,152 participants, we show that fair LLM agents overcome the machine penalty in social dilemmas, while selfish or altruistic personas do not.</p>
+                    <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:tS2w5q8j5-wC" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">National Science Review 2026</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/craftutopia.png" alt="CraftUtopia system architecture"></figure>
+                  <div class="research-work-card__body">
+                    <h4>CraftUtopia: A LLM-based Multi-Agent System for Collaborative Construction in Minecraft</h4>
+                    <p>We build a hierarchical multi-agent Minecraft system that constructs 3D buildings from a single 2D image, achieving 100% success across representative builds and faster construction with more workers.</p>
+                    <div class="research-work-card__links">
+                      <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:5Ul4iDaHHb8C" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                      <a href="https://rgb-0000ff.github.io/CraftUtopia/" target="_blank" rel="noopener noreferrer">Project ↗</a>
+                    </div>
+                    <p class="research-work-card__award"><strong>AAMAS 2026 Best System Demo Award</strong></p>
+                  </div>
+                </article>
+              </div></div>
             </div>
           </section>
 
@@ -117,122 +192,27 @@
               <p class="research-topic__label">self-improving · agent skills · autonomy · long-horizon</p>
               <h2>Agent Harness</h2>
               <p class="research-topic__desc">I work on the infrastructure around agents: harnesses that organize skills, support autonomous long-horizon behavior, benchmark tool use, and eventually improve themselves.</p>
-              <div class="research-topic__work"><h3>Selected work</h3><ul class="research-paper-list">
-                <li>Self-Harness: Harnesses That Improve Themselves <a href="https://arxiv.org/abs/2606.09498" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-                <li>Organizing, orchestrating, and benchmarking agent skills at ecosystem scale <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:Tiz5es2fbqcC" target="_blank" rel="noopener noreferrer">Read ↗</a></li>
-              </ul></div>
+              <div class="research-topic__work"><h3>Selected work</h3><div class="research-work-list">
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/self-harness.png" alt="Figure 1 from Self-Harness"></figure>
+                  <div class="research-work-card__body">
+                    <h4>Self-Harness: Harnesses That Improve Themselves</h4>
+                    <p>We let agents mine failures, propose harness edits, and validate them with regression tests, improving held-in and held-out pass rates across all nine model-benchmark combinations.</p>
+                    <a href="https://arxiv.org/abs/2606.09498" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">arXiv</p>
+                  </div>
+                </article>
+                <article class="research-work-card">
+                  <figure><img src="assets/paper-figures/agent-skills.png" alt="Figure 1 from AgentSkillOS"></figure>
+                  <div class="research-work-card__body">
+                    <h4>Organizing, orchestrating, and benchmarking agent skills at ecosystem scale</h4>
+                    <p>We introduce AgentSkillOS, organizing skills as a capability tree and orchestrating them as DAG pipelines, with tree retrieval and DAG composition outperforming flat skill invocation at ecosystem scale.</p>
+                    <a href="https://scholar.google.com.hk/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=JLdYe_IAAAAJ&amp;sortby=pubdate&amp;citation_for_view=JLdYe_IAAAAJ:Tiz5es2fbqcC" target="_blank" rel="noopener noreferrer">Read ↗</a>
+                    <p class="research-work-card__venue">Submitted to TMLR</p>
+                  </div>
+                </article>
+              </div></div>
             </div>
-          </section>
-
-          <section class="research-topic" id="topic-4">
-            <h2>LLM Reasoning and Reinforcement Learning</h2>
-            <p class="research-topic__desc">Methods that improve LLM reasoning, mostly through the lens of reinforcement learning.</p>
-            <ol class="research-paper-list">
-              <li>
-                Reinforcement Learning for Large Language Models via Group Preference Reward Shaping <a href="https://aclanthology.org/2025.emnlp-main.1085/" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Squeeze the Soaked Sponge: Efficient Off-policy Reinforcement Finetuning for Large Language Model <a href="https://arxiv.org/abs/2507.06892" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                The Path of Self-Evolving Large Language Models: Achieving Data-Efficient Learning via Intrinsic Feedback <a href="https://arxiv.org/abs/2510.02752" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                Scaling Physical Reasoning with the PHYSICS Dataset <a href="https://arxiv.org/abs/2506.00022" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                ReMA: Learning to Meta-think for LLMs with Multi-Agent Reinforcement Learning <a href="https://arxiv.org/abs/2503.09501" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                PhysicsMinions: Winning Gold Medals in the Latest Physics Olympiads with a Coevolutionary Multimodal Multi-Agent System <a href="https://arxiv.org/abs/2509.24855" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-              <li>
-                MARTI-MARS: Scaling Multi-Agent Self-Search via Reinforcement Learning for Code Generation <a href="https://arxiv.org/abs/2602.07848" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-            </ol>
-          </section>
-
-          <section class="research-topic" id="topic-5">
-            <h2>Multi-Agent Learning in Games</h2>
-            <p class="research-topic__desc">Theoretical analyses of multi-agent learning dynamics and equilibrium behavior.</p>
-            <ol class="research-paper-list">
-              <li>
-                A Formal Model for Multiagent Q-Learning on Graphs <a href="https://doi.org/10.1007/s11432-024-4289-6" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Provably Efficient Information-Directed Sampling Algorithms for Multi-Agent Reinforcement Learning <a href="https://www.sciencedirect.com/science/article/pii/S0004370225001110" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Payoff Control in Multichannel Games: Influencing Opponent Learning Evolution <a href="https://doi.org/10.1109/TCYB.2024.3507830" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Regret Minimization in Population Network Games: Vanishing Heterogeneity and Convergence to Equilibria <a href="https://doi.org/10.1109/TNNLS.2025.3565266" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                The Stochastic Evolutionary Dynamics of Softmax Policy Gradient in Games <a href="https://dl.acm.org/doi/10.5555/3635637.3662966" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                A Pair-Approximation Method for Modelling the Dynamics of Multi-Agent Stochastic Games <a href="https://dblp.org/rec/conf/aaai/ChuYHM023" target="_blank" rel="noopener noreferrer">(record)</a>
-              </li>
-              <li>
-                Learning by Reusing Previous Advice: A Memory-Based Teacher-Student Framework <a href="https://link.springer.com/article/10.1007/s10458-022-09595-1" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                The Best of Both Worlds in Network Population Games: Reaching Consensus and Convergence to Equilibrium <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/f39931608cdc52d7d9f8ba7003af9136-Abstract-Conference.html" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Individual-Level Inverse Reinforcement Learning for Mean Field Games <a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p253.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Modelling the Dynamics of Multi-Agent Q-Learning: The Stochastic Effects of Local Interaction and Incomplete Information <a href="https://www.ijcai.org/proceedings/2022/55" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Modelling the Dynamics of Regret Minimization in Large Agent Populations: A Master Equation Approach <a href="https://www.ijcai.org/proceedings/2022/76" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                The Dynamics of Q-Learning in Population Games: A Physics-Inspired Continuity Equation Model <a href="https://aamas.csc.liv.ac.uk/Proceedings/aamas2022/pdfs/p615.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Dynamics of Q-Learning in Networked Stochastic Games <a href="https://doi.org/10.1109/TNNLS.2025.3641365" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-            </ol>
-          </section>
-
-          <section class="research-topic" id="topic-6">
-            <h2>Cooperation in Social Dilemmas</h2>
-            <p class="research-topic__desc">Understanding cooperation emergence in social dilemma games.</p>
-            <ol class="research-paper-list">
-              <li>
-                A Successful Strategy for Multichannel Iterated Prisoner&#x27;s Dilemma <a href="https://www.ijcai.org/proceedings/2024/0031.pdf" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Multi-Agent, Human-Agent and Beyond: A Survey on Cooperation in Social Dilemmas <a href="https://doi.org/10.1016/j.neucom.2024.128514" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Emergence of Punishment in Social Dilemma with Environmental Feedback <a href="https://dblp.org/rec/conf/aaai/WangSSH23" target="_blank" rel="noopener noreferrer">(record)</a>
-              </li>
-              <li>
-                Facilitating Cooperation in Human-Agent Hybrid Populations through Autonomous Agents <a href="https://www.sciencedirect.com/science/article/pii/S2589004223022563" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                How Committed Individuals Shape Social Dynamics: A Survey on Coordination Games and Social Dilemma Games <a href="https://doi.org/10.1209/0295-5075/acfb34" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Beyond a Binary Theorizing of Prosociality <a href="https://www.pnas.org/doi/abs/10.1073/pnas.2412195121" target="_blank" rel="noopener noreferrer">(paper)</a>
-              </li>
-              <li>
-                Large Language Models Overcome the Machine Penalty When Acting Fairly but Not When Acting Selfishly or Altruistically <a href="https://arxiv.org/abs/2410.03724" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-            </ol>
-          </section>
-
-          <section class="research-topic" id="topic-7">
-            <h2>LLM Meets Psychology</h2>
-            <ol class="research-paper-list">
-              <li>
-                Large Language Models are Near-Optimal Decision-Makers with a Non-Human Learning Behavior <a href="https://arxiv.org/abs/2506.16163" target="_blank" rel="noopener noreferrer">(arXiv)</a>
-              </li>
-            </ol>
           </section>
 
         </div>
