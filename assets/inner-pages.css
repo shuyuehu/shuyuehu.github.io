@@ -285,9 +285,8 @@ body.inner-page .inner-site-header {
 
 .inner-page--research .research-topic__work {
   max-width: none;
-  margin-top: 22px;
-  padding-top: 16px;
-  border-top: 1px solid var(--line);
+  margin-top: 18px;
+  padding-top: 4px;
 }
 
 .inner-page--research .research-topic__work h3 {
@@ -328,10 +327,11 @@ body.inner-page .inner-site-header {
   grid-template-columns: minmax(132px, 24%) minmax(0, 1fr);
   gap: 14px;
   align-items: start;
-  padding: 12px;
-  border: 1px solid rgba(142,62,94,.16);
+  padding: 13px;
+  border: 1px solid rgba(142, 62, 94, .08);
   border-radius: 16px;
-  background: #fff8f5;
+  background: rgba(255, 250, 245, .82);
+  box-shadow: 0 12px 30px rgba(142, 62, 94, .045);
 }
 
 .inner-page--research .research-work-card figure {
@@ -341,9 +341,8 @@ body.inner-page .inner-site-header {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 1px solid rgba(142,62,94,.12);
   border-radius: 12px;
-  background: #fff;
+  background: rgba(255, 255, 255, .86);
 }
 
 .inner-page--research .research-work-card img {
