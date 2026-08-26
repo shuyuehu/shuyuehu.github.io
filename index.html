@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/croissant-home.css">
+    <link rel="stylesheet" href="assets/croissant-home.css?v=2">
   </head>
   <body>
     <div class="site-shell">
@@ -216,11 +216,13 @@
       function resetCroissantRain() {
         croissantCount = 0;
         hero.querySelectorAll('.game-pastry').forEach((pastry) => pastry.remove());
+        hero.classList.add('rain-cleared');
         updateCroissantHud(rainLevels[0]);
         clicker.classList.remove('is-popping');
       }
 
       function collectCroissants() {
+        hero.classList.remove('rain-cleared');
         const currentLevel = getRainLevel(croissantCount);
         const previousCount = croissantCount;
         croissantCount = Math.min(maxCroissants, croissantCount + currentLevel.perTap);

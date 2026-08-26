@@ -90,6 +90,7 @@ button { font: inherit; }
 .rain-toggle:hover { background: rgba(255,255,255,.18); transform: translateY(-1px); }
 .rain-paused .pastry,
 .rain-paused .game-pastry { animation-play-state: paused; }
+.rain-cleared .pastry { display: none; }
 
 .hero {
   min-height: 710px;
